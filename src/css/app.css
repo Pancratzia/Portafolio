@@ -54,8 +54,28 @@ ul {
 }
 
 .header {
-  padding: 4rem 0 2rem;
+  padding: 2rem 0 2rem;
   background-color: #16092f;
+}
+.header__lang {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto;
+  text-align: right;
+}
+.header__lang__btn {
+  background-color: transparent;
+  color: #fff;
+  border: 0.2rem solid #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+.header__lang__btn:hover {
+  cursor: pointer;
+}
+.header__lang__btn span {
+  margin-left: 0.5rem;
 }
 .header__grid {
   width: 90%;

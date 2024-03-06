@@ -2,8 +2,30 @@
 @use "../base/mixins" as m;
 
 .header {
-  padding: 4rem 0 2rem;
+  padding: 2rem 0 2rem;
   background-color: darken(v.$purple, 45%);
+
+  &__lang {
+    @include m.container;
+    text-align: right;
+
+    &__btn{
+      background-color: transparent;
+      color: v.$white;
+      border: .2rem solid v.$white;
+      padding: .5rem 1rem;
+      border-radius: .5rem;
+      font-weight: v.$bold;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      & span{
+        margin-left: .5rem;
+      }
+    }
+  }
 
   &__grid {
     @include m.container;

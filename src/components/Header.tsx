@@ -7,8 +7,18 @@ const Header = () => {
 
   const [t, i18n] = useTranslation("global");
 
+  const handleChangeLanguage = () => {
+    i18n.changeLanguage(i18n.language === "en" ? "es" : "en");
+  }
+
   return (
     <div className="header">
+      <div className="header__lang">
+          <button className="header__lang__btn" onClick={handleChangeLanguage}>
+            <i className="fas fa-globe-americas"></i>
+            <span>{t("header.switch")}</span>
+          </button>
+        </div>
       <div className="header__grid">
         <div className="header__info">
           <h1 className="header__logo">
