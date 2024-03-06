@@ -1,10 +1,13 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import validator from "email-validator";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const form = useRef<HTMLFormElement | null>(null);
+  const [t] = useTranslation("global");
 
   const sendEmail = (e: any) => {
     e.preventDefault();
@@ -58,7 +61,7 @@ const Contact = () => {
 
   return (
     <section className="contact" id="contact">
-      <h2 className="contact__heading">Contact Me</h2>
+      <h2 className="contact__heading">{t("titles.contact")}</h2>
       <form
         className="contact__form"
         ref={form}

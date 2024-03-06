@@ -11,5 +11,13 @@
             "projects": "Projects",
             "contact": "Contact"
         }
+    },
+    "titles": {
+        "about_me": "About Me",
+        "achievements": "My Achievements",
+        "skills": "My Skills",
+        "projects": "My Projects",
+        "extra": "Extra Projects",
+        "contact": "Contact Me"
     }
 }

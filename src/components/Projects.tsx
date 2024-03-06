@@ -5,8 +5,11 @@ import { random } from "../utils/functions";
 import { useEffect } from "react";
 import { Project } from "./Project";
 import Extra from "./Extra";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
+
+  const [t] = useTranslation("global");
 
   useEffect(() => {
     Aos.init();
@@ -16,7 +19,7 @@ const Projects = () => {
   return (
     <>
     <main className="projects" id="projects">
-      <h2 className="projects__heading">My Projects</h2>
+      <h2 className="projects__heading">{t("titles.projects")}</h2>
       <div className="projects__grid">
         {PROJECTS.map((project, index) => (
           <Project

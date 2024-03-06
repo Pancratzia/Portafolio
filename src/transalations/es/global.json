@@ -11,5 +11,13 @@
             "projects": "Proyectos",
             "contact": "Contacto"
         }
+    },
+    "titles": {
+        "about_me": "Sobre Mí",
+        "achievements": "Mis Logros",
+        "skills": "Mis Habilidades",
+        "projects": "Mis Proyectos",
+        "extra": "Proyectos Extra",
+        "contact": "Contáctame"
     }
 }

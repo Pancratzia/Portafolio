@@ -1,7 +1,9 @@
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 function Skills() {
   const iconsContainerRef = useRef<HTMLDivElement | null>(null);
+  const [t] = useTranslation("global");
 
   useEffect(() => {
     const iconsContainer = iconsContainerRef.current;
@@ -66,7 +68,7 @@ function Skills() {
 
   return (
     <section className="skills" id="skills">
-      <h2 className="skills__heading">My Skills</h2>
+      <h2 className="skills__heading">{t("titles.skills")}</h2>
       <div className="skills__grid">
         <div className="skills__icons" ref={iconsContainerRef}></div>
       </div>

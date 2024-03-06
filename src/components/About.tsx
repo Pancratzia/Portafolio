@@ -1,7 +1,12 @@
+import { useTranslation } from "react-i18next";
+
 const About = () => {
+
+  const [t] = useTranslation("global");
+
   return (
     <section className="about" id="about">
-      <h2 className="about__heading">About Me</h2>
+      <h2 className="about__heading">{t("titles.about_me")}</h2>
       <div className="about__grid">
         <div className="about__image-container">
           <picture>

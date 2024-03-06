@@ -5,12 +5,15 @@ import { EXTRA_PROJECTS } from "../data/data";
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import "swiper/css/navigation";
+import { useTranslation } from "react-i18next";
 
 const Extra = () => {
 
+  const [t] = useTranslation("global");
+
   return (
     <section className="extra">
-      <h2 className="extra__heading--extra">Extra Projects</h2>
+      <h2 className="extra__heading--extra">{t("titles.extra")}</h2>
       
         <Swiper
           navigation={true}
