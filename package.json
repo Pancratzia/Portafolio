@@ -16,8 +16,10 @@
     "aos": "^2.3.4",
     "email-js": "^2.0.2",
     "email-validator": "^2.0.4",
+    "i18next": "^23.10.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^14.0.5",
     "sweetalert2": "^11.10.0",
     "swiper": "^11.0.4"
   },
