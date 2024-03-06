@@ -18,6 +18,31 @@ export const Data = () => {
   
   const PROJECTS = [
     {
+      title: `${t("projects.project_landing_page.title")}`,
+      image: "landingpage",
+      description:
+      `${t("projects.project_landing_page.description")}`,
+      github: "https://github.com/ARLA-Dev/drayuleimaperez",
+      demo: "https://www.drayuleimaperez.com/",
+      tags: ["HTML", "CSS", "JavaScript", "AOS", "SwiperJS", "Vercel", "Google Search", "Landing Page", "SEO", "Google Search", "Leaflet"],
+    },
+    {
+      title: `${t("projects.projects_starwars_wiki.title")}`,
+      image: "starwarswiki",
+      description: `${t("projects.projects_starwars_wiki.description")}`,
+      github: "https://github.com/Pancratzia/Monthly-Projects/tree/main/starwars-wiki",
+      demo: "https://pancratzia-starwarswiki.netlify.app/",
+      tags: ["HTML", "CSS", "JavaScript", "React", "SWAPI", "React Custom Hooks", "React Context", "Animated Background", "Recursivity"],
+    },
+    {
+      title: `${t("projects.projects_conecta4.title")}`,
+      image: "conecta4",
+      description: `${t("projects.projects_conecta4.description")}`,
+      github: "https://github.com/Pancratzia/Monthly-Projects/tree/main/conecta-4",
+      demo: "https://pancratzia-conecta4.netlify.app/",
+      tags: ["HTML", "CSS", "JavaScript", "React", "Game"],
+    },
+    {
       title: `${t("projects.project_bienes_raices.title")}`,
       image: "bienesraices",
       description:
@@ -29,15 +54,7 @@ export const Data = () => {
       demoPass: "admin",
       tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "MVC", "Admin"],
     },
-    {
-      title: `${t("projects.project_landing_page.title")}`,
-      image: "landingpage",
-      description:
-      `${t("projects.project_landing_page.description")}`,
-      github: "https://github.com/ARLA-Dev/drayuleimaperez",
-      demo: "https://www.drayuleimaperez.com/",
-      tags: ["HTML", "CSS", "JavaScript", "AOS", "SwiperJS", "Vercel", "Google Search", "Landing Page", "SEO", "Google Search", "Leaflet"],
-    }
+    
   ];
   
   const EXTRA_PROJECTS = [

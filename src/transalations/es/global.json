@@ -102,6 +102,14 @@
     "projects_ppp":{
         "title": "P.P.P",
         "description": "Creada por ArLa junto a Arthuro Dugarte (ArtDugarte en GitHub). Este proyecto ayuda a la empresa 'Pérez Productos Clean' a gestionar el inventario, los precios, y los ingredientes de fabricación. Desarrollada con Java 8, JasperReports, y MySQL."
+    },
+    "projects_conecta4":{
+        "title": "Conecta 4",
+        "description": "Un juego de conecta 4 creado en React. Le permite jugar contra otro jugador y utiliza almacenamiento local para guardar los movimientos y puntajes."
+    },
+    "projects_starwars_wiki":{
+        "title": "Star Wars Wiki",
+        "description": "Una wiki de StarWars creada con React usando Custom Hooks, React Context y StarWars API. El proyecto también inlcuye un filtro para buscar personajes por nombre, y abre un Modal cuando un personaje es clickeado, que muestra más información sobre ellos."
     }
   }
 }
