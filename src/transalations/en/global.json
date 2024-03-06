@@ -65,5 +65,15 @@
       "submit": "Submit",
       "reset": "Reset"
     }
+  },
+  "projects": {
+    "project_bienes_raices":{
+        "title": "Bienes Raices",
+        "description": "Website for a real estate agency where a listing of properties for sale is displayed, along with details for each of them. It includes an Administration Panel to manage information related to properties, sellers, and blog posts"
+    },
+    "project_landing_page": {
+      "title": "Landing Page - Dra. Yuleima Pérez",
+      "description": "Landing Page for a ginecobstetrician. It's main purpose is to showcase the doctor social media accounts, her services and her contact number. The project is hosted on Vercel and it's correctly indexed in Google Search."
+    }
   }
 }

@@ -1,6 +1,6 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { ANIMATIONS, PROJECTS } from "../data/data";
+import  { Data } from "../data/Data";
 import { random } from "../utils/functions";
 import { useEffect } from "react";
 import { Project } from "./Project";
@@ -8,6 +8,8 @@ import Extra from "./Extra";
 import { useTranslation } from "react-i18next";
 
 const Projects = () => {
+
+  const { PROJECTS, ANIMATIONS } = Data();
 
   const [t] = useTranslation("global");
 

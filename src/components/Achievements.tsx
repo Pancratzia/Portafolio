@@ -3,9 +3,9 @@ import useFetch from "../hooks/useFetch";
 import { Achievement } from "./Achievement";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { ANIMATIONS } from "../data/data";
 import { random } from "../utils/functions";
 import { useTranslation } from "react-i18next";
+import { Data } from "../data/Data";
 
 const Achievements = () => {
 
@@ -32,6 +32,8 @@ const Achievements = () => {
   useEffect(() => {
     Aos.init();
   }, []);
+
+  const { ANIMATIONS } = Data();
 
   return (
     <section className="achievements" id="achievements">

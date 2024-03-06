@@ -65,5 +65,15 @@
       "submit": "Enviar",
       "reset": "Limpiar"
     }
+  },
+  "projects": {
+    "project_bienes_raices":{
+        "title": "Bienes Raices",
+        "description":"Sitio Web para una agrencia de Real Estate para la venta de propiedades. Contiene un panel de administración para gestionar información relacionada con las propiedades, vendedores y publicaciones de blog."
+    },
+    "project_landing_page": {
+      "title": "Landing Page - Dra. Yuleima Pérez",
+      "description": "Landing Page para una ginecobstetra. Su propósito principal es mostrar las cuentas de Redes Sociales de la doctora, sus servicios y su contacto. El proyecto está alojado en Vercel y se encuentra correctamente indexado en Google Search."
+    }
   }
 }

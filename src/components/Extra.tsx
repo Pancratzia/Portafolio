@@ -1,7 +1,7 @@
 
 import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EXTRA_PROJECTS } from "../data/data";
+import { Data } from "../data/Data";
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import "swiper/css/navigation";
@@ -10,6 +10,7 @@ import { useTranslation } from "react-i18next";
 const Extra = () => {
 
   const [t] = useTranslation("global");
+  const { EXTRA_PROJECTS } = Data();
 
   return (
     <section className="extra">
