@@ -28,10 +28,12 @@ const Extra = () => {
           }}
           loop={true}
           centeredSlides={true}
+          grabCursor={true}
           
         >
           {EXTRA_PROJECTS.map((project, index) => (
-            <SwiperSlide key={index} className="extra__project">
+
+            <SwiperSlide key={index} className="extra__project" >
              <h3 className="extra__title">{project.title}</h3>
              <a className="extra__link" href={project.link} target="_blank">
                 <i className="extra__icon fa fa-external-link"></i>
