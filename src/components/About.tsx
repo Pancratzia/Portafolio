@@ -31,7 +31,7 @@ const About = () => {
 
       <footer className="about__footer">
         <p className="about__footer-text">
-          {t("about.question_cv")} <a href="https://drive.google.com/file/d/1-IR2j718rKg6Q-EWdLbgRS-H16-sDP-O/view?usp=sharing" target="_blank" className="about__footer-link">{t("about.read_my_cv")}</a>
+          {t("about.question_cv")} <a href="https://drive.google.com/file/d/1WLwEsZ-HxfsULa-ulTUeLAwWk9sYMwou/view?usp=sharing" target="_blank" className="about__footer-link">{t("about.read_my_cv")}</a>
         </p>
       </footer>
 
