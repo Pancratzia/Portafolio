@@ -74,6 +74,10 @@
     "project_landing_page": {
       "title": "Landing Page - Dra. Yuleima Pérez",
       "description": "Landing Page for a ginecobstetrician. It's main purpose is to showcase the doctor social media accounts, her services and her contact number. The project is hosted on Vercel and it's correctly indexed in Google Search."
+    },
+    "project_personal_portfolio": {
+      "title": "Personal Portfolio",
+      "description": "My personal portfolio is built with React, TypeScript, and SASS. It utilizes Vite for fast development, AOS library for animations and SwiperJS to create sliders. The project is hosted on Netlify, and its code is available on GitHub. The project integrates FetchAPI and GitHub API to showcase achievements. It also includes multilingual support."
     }
   }
 }

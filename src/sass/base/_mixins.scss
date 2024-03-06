@@ -84,11 +84,10 @@
 @mixin keyword {
   background-image: linear-gradient(
     to bottom right,
+    darken(#7743db, 15%),
     #7743db,
     #966ee3,
-    #966ee3,
-    #ffb100 85%,
-    #ffd066
+    lighten(#966ee3, 5%)
   );
   background-size: cover;
   background-repeat: no-repeat;

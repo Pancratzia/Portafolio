@@ -42,9 +42,9 @@ export const Data = () => {
   
   const EXTRA_PROJECTS = [
     {
-      title: "Personal Portfolio",
+      title: `${t("projects.project_personal_portfolio.title")}`,
       description:
-        "My personal portfolio is built with React, TypeScript, and SASS. It utilizes Vite for fast development, AOS library for animations and SwiperJS to create sliders. The project is hosted on Netlify, and its code is available on GitHub. The contact form integrates FetchAPI and GitHub API to showcase achievements.",
+        `${t("projects.project_personal_portfolio.description")}`,
       link: "https://github.com/Pancratzia/Portfolio",
       tags: ["HTML", "JavaScript", "GitHub", "React", "TypeScript", "SASS", "AOS", "SwiperJS", "Netlify"],
     },

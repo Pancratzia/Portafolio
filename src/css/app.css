@@ -299,17 +299,18 @@ ul {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 .about__description {
-  font-size: clamp(1rem, 6vw, 1.6rem);
+  font-size: clamp(1.2rem, 6vw, 1.8rem);
   text-align: justify;
   margin-bottom: 1rem;
   line-height: 1.5;
   color: #16092f;
+  font-family: "Titillium Web", sans-serif;
 }
 .about__description:last-of-type {
   margin-bottom: 0;
 }
 .about__keyword {
-  background-image: linear-gradient(to bottom right, #7743db, #966ee3, #966ee3, #ffb100 85%, #ffd066);
+  background-image: linear-gradient(to bottom right, #5222b0, #7743db, #966ee3, #a583e7);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 0;

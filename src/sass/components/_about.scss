@@ -43,11 +43,12 @@
   }
 
   &__description {
-    font-size: clamp(1rem, 6vw, 1.6rem);
+    font-size: clamp(1.2rem, 6vw, 1.8rem);
     text-align: justify;
     margin-bottom: 1rem;
     line-height: 1.5;
     color: darken(v.$purple, 45%);
+    font-family: v.$fontTitillium;
 
     &:last-of-type {
       margin-bottom: 0;

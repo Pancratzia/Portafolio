@@ -74,6 +74,10 @@
     "project_landing_page": {
       "title": "Landing Page - Dra. Yuleima Pérez",
       "description": "Landing Page para una ginecobstetra. Su propósito principal es mostrar las cuentas de Redes Sociales de la doctora, sus servicios y su contacto. El proyecto está alojado en Vercel y se encuentra correctamente indexado en Google Search."
+    },
+    "project_personal_portfolio": {
+      "title": "Portfolio Personal",
+      "description": "Mi portafolio personal está hecho con React, TypeScript y SASS. Utiliza Vite para desarrollo rápido, la librería AOS para animaciones y SwiperJS para crear sliders. El proyecto está alojado en Netlify, y su código está disponible en GitHub. El proyecto integra FetchAPI y GitHub API para mostrar logros. Además, incluye soporte multilingúe."
     }
   }
 }
