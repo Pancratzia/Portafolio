@@ -19,5 +19,8 @@
         "projects": "My Projects",
         "extra": "Extra Projects",
         "contact": "Contact Me"
-    }
+    },
+    "footer": "All Rights Reserved",
+    "description": "<p class=\"about__description\">As a <span class=\"about__keyword\">FullStack Developer</span>, I am driven by an unwavering passion for <span class=\"about__keyword\">programming</span>, a love for <span class=\"about__keyword\">problem-solving</span>, and an insatiable curiosity for exploration. I thrive on the continuous pursuit of knowledge, embodying a commitment to lifelong learning. Having pursued my studies in <span class=\"about__keyword\">Telematics Engineering</span> at the Universidad Centro Occidental Lisandro Alvarado in Barquisimeto, Venezuela, I've come to understand that being a programmer is a <span class=\"about__keyword\">journey of perpetual learning and unlearning</span>.</p><p class=\"about__description\">My dedication extends beyond the academic realm, as I believe in delivering <span class=\"about__keyword\">excellence</span> in every professional endeavor. With an inherent belief that being a developer is synonymous with <span class=\"about__keyword\">constant evolution</span>, I am motivated by the desire to grow personally and professionally each day. My approach to work is anchored in the philosophy that <span class=\"about__keyword\">continuous improvement is not just a goal, but a way of life</span>.</p>"
+
 }

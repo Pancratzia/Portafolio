@@ -19,5 +19,8 @@
         "projects": "Mis Proyectos",
         "extra": "Proyectos Extra",
         "contact": "Contáctame"
-    }
+    },
+    "footer": "Todos los Derechos Reservados",
+    "description": "<p class=\"about__description\">Como <span class=\"about__keyword\">Desarrolladora FullStack</span>, me impulsa una pasión inquebrantable por la <span class=\"about__keyword\">programación</span>, un amor por la <span class=\"about__keyword\">resolución de problemas</span>, y una curiosidad insaciable por la exploración. Vivo en la búsqueda constante de conocimiento, fijando un compromiso con el aprendizaje continuo. Gracias a mis estudios en <span class=\"about__keyword\">Ingeniería Telemática</span> en la Universidad Centro Occidental Lisandro Alvarado en Barquisimeto, Venezuela, he llegado a entender que ser programador es un <span class=\"about__keyword\">viaje de aprendizaje y desaprendizaje perpetuo</span>.</p><p class=\"about__description\">Mi dedicación se extiende más allá del ámbito académico, ya que creo en ofrecer <span class=\"about__keyword\">excelencia</span> en cada objetivo profesional. Con una creencia inherente de que ser un desarrollador es sinónimo de <span class=\"about__keyword\">evolución constante</span>, me motiva el deseo de crecer personal y profesionalmente cada día. Mi enfoque en el trabajo se basa en la filosofía de que  <span class=\"about__keyword\">la mejora continua no es solo un objetivo, sino un estilo de vida</span>.</p>"
+
 }
