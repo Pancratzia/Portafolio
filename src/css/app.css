@@ -61,7 +61,14 @@ ul {
   width: 90%;
   max-width: 120rem;
   margin: 0 auto;
-  text-align: right;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .header__lang {
+    text-align: right;
+    margin-bottom: 0;
+  }
 }
 .header__lang__btn {
   background-color: transparent;

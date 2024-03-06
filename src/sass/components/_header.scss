@@ -7,7 +7,13 @@
 
   &__lang {
     @include m.container;
-    text-align: right;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    @include m.tablet {
+      text-align: right;
+      margin-bottom: 0;
+    }
 
     &__btn{
       background-color: transparent;

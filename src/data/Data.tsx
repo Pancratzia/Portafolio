@@ -49,56 +49,41 @@ export const Data = () => {
       tags: ["HTML", "JavaScript", "GitHub", "React", "TypeScript", "SASS", "AOS", "SwiperJS", "Netlify"],
     },
     {
-      title: "App Salon",
-      description: "Website for a beauty salon where a list of services is displayed for clients along with the option to schedule an appointment. It includes an administration section to manage customer information, appointments, and services.",
+      title: `${t("projects.projects_app_salon.title")}`,
+      description: `${t("projects.projects_app_salon.description")}`,
       link: "https://github.com/Pancratzia/Web-Development-Repository/tree/main/07-AppSalon",
       tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "MVC", "PHPMailer", "Admin"],
     },
     {
-      title: "UpTask",
-      description: "A simple task application where each user can register and create projects, consisting of tasks that can be deleted, modified, and marked as completed.",
+      title: `${t("projects.projects_up_task.title")}`,
+      description: `${t("projects.projects_up_task.description")}`,
       link: "https://github.com/Pancratzia/Web-Development-Repository/tree/main/08-UpTask",
       tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "MVC", "PHPMailer"],
     },
     {
-      title: "PankraCamp",
-      description: "Project for a two-day event featuring conferences and workshops. It includes an administrative area to manage event information and a user registration system for attendees. Attendees can purchase three types of tickets and make payments through PayPal (The project is a demo, so it is using a PayPal sandbox account).",
+      title: `${t("projects.projects_ppp.title")}`,
+      description: `${t("projects.projects_ppp.description")}`,
       link: "https://github.com/Pancratzia/Web-Development-Repository/tree/main/09-PankraCamp",
       tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "MVC", "PHPMailer", "Admin", "PayPal"],
     },
     {
-      title: "Web Development Repository",
+      title: `${t("projects.projects_react_nodejs_blog.title")}`,
       description:
-        "This repository contains projects created for the 'Desarrollo Web Completo con HTML5, CSS3, JS, AJAX PHP y MySQL' course by Juan Pablo de la Torre Valdez. Projects are hosted on platforms like Netlify, 000WebHost, and DOMCloud.",
-      link: "https://github.com/Pancratzia/Web-Development-Repository",
-      tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "MVC", "DOMCloud", "Netlify", "000WebHost", "SASS"],
-    },
-    {
-      title: "React and NodeJS Blog",
-      description:
-        "A React Blog created with NodeJS, React, and PostgreSQL. This project enables users to write, modify, and delete blog articles with different categories. Libraries such as React Router Dom, React Quill, and Multer are utilized.",
+        `${t("projects.projects_react_nodejs_blog.description")}`,
       link: "https://github.com/Pancratzia/React-And-NodeJs-Blog",
       tags: ["React", "NodeJS", "PostgreSQL", "React Quill", "React Router Dom", "Multer", "SASS"],
     },
     {
-      title: "FrontEnd Mini Challenges",
+      title: `${t("projects.projects_femisys.title")}`,
       description:
-        "This project is designed to enhance front-end skills through mini challenges using various technologies such as React, SASS, CSS, JavaScript, Tailwind, and Styled Components. Demo projects and code are available online.",
-      link: "https://github.com/Pancratzia/frontend-mini-challenges",
-      tags: ["HTML", "CSS", "JavaScript", "React", "SASS", "Tailwind", "Styled Components", "GitHub"],
-    },
-    {
-      title: "Femisys",
-      description:
-        "Created for ArLa Corp Organization along with Arthuro Dugarte (ArtDugarte on GitHub). Developed with HTML, Bootstrap, SpringBoot, Electron, and PostgreSQL. This system was designed for a doctor who needed a more efficient solution than the existing system.",
+        `${t("projects.projects_femisys.description")}`,
       link: "https://github.com/Arla-Inc/FemiSys",
       tags: ["HTML", "Bootstrap", "SpringBoot", "Electron", "PostgreSQL"],
     },
     {
-      title: "P.P.P",
+      title: `${t("projects.projects_pankracamp.title")}`,
       description:
-        "Created for ArLa Corp Organization along with Arthuro Dugarte. This project helps the company 'Pérez Productos Clean' manage inventory, prices, and fabrication ingredients. Developed with Java 8, JasperReports, and MySQL.",
-      link: "https://github.com/Arla-Inc/P.P.P",
+        `${t("projects.projects_pankracamp.description")}`,
       tags: ["Java", "JasperReports", "MySQL", "Java Swing"],
     },
   ];

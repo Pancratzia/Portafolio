@@ -78,6 +78,30 @@
     "project_personal_portfolio": {
       "title": "Portfolio Personal",
       "description": "Mi portafolio personal está hecho con React, TypeScript y SASS. Utiliza Vite para desarrollo rápido, la librería AOS para animaciones y SwiperJS para crear sliders. El proyecto está alojado en Netlify, y su código está disponible en GitHub. El proyecto integra FetchAPI y GitHub API para mostrar logros. Además, incluye soporte multilingúe."
+    },
+    "projects_app_salon": {
+      "title": "App Salon",
+      "description": "Sitio Web para un salón de belleza donde una lista de servicios es mostrada para los clientes junto a la opción para agendar una cita. Incluye una sección de administración para gestionar la información de los clientes, las citas y los servicios."
+    },
+    "projects_up_task":{
+        "title": "UpTask",
+        "description": "Una aplicación de tareas simple donde cada usuario puede registrar y crear proyectos, que está formado por tareas que se pueden borrar, modificar y marcar como completadas."
+    },
+    "projects_pankracamp":{
+        "title": "PankraCamp",
+        "description": "Proyecto para un evento de dos días para conferencias y talleres. Incluye un área administrativa para manejar la información de los eventos y un sistema de registro de usuarios para los participantes. Los participantes pueden comprar tres tipos de entradas y hacer pagos con PayPal."
+    },
+    "projects_react_nodejs_blog":{
+        "title": "Blog en React y NodeJS",
+        "description": "Un blog en React creado con NodeJS, React, y PostgreSQL. Este proyecto permite a los usuarios escribir, modificar y borrar artículos de blog con diferentes categorías. Librerías como React Router Dom, React Quill y Multer son utilizadas."
+    },
+    "projects_femisys":{
+        "title": "Femisys",
+        "description": "Creada por ArLa junto a Arthuro Dugarte (ArtDugarte en GitHub). Desarrollada con HTML, Bootstrap, SpringBoot, Electron, y PostgreSQL. Este sistema fue diseño para un doctor que necesita una solución más eficiente que la existente."
+    },
+    "projects_ppp":{
+        "title": "P.P.P",
+        "description": "Creada por ArLa junto a Arthuro Dugarte (ArtDugarte en GitHub). Este proyecto ayuda a la empresa 'Pérez Productos Clean' a gestionar el inventario, los precios, y los ingredientes de fabricación. Desarrollada con Java 8, JasperReports, y MySQL."
     }
   }
 }
