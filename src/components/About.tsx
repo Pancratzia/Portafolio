@@ -25,13 +25,13 @@ const About = () => {
           </picture>
         </div>
 
-        <div className="about__info"  dangerouslySetInnerHTML={{ __html: t("description") }}></div>
+        <div className="about__info"  dangerouslySetInnerHTML={{ __html: t("about.description") }}></div>
           
       </div>
 
       <footer className="about__footer">
         <p className="about__footer-text">
-          Do you want to know more about me? <a href="https://drive.google.com/file/d/1-IR2j718rKg6Q-EWdLbgRS-H16-sDP-O/view?usp=sharing" target="_blank" className="about__footer-link">Read my CV!</a>
+          {t("about.question_cv")} <a href="https://drive.google.com/file/d/1-IR2j718rKg6Q-EWdLbgRS-H16-sDP-O/view?usp=sharing" target="_blank" className="about__footer-link">{t("about.read_my_cv")}</a>
         </p>
       </footer>
 

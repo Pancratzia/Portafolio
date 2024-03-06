@@ -38,7 +38,7 @@ const Achievements = () => {
       <h2 className="achievements__heading">{t("titles.achievements")}</h2>
       <div className="achievements__grid">
         <Achievement
-          title="GitHub Repositories"
+          title={t("achievements.titles.repositories")}
           loading={loadingData}
           data={reposData}
           number={Array.isArray(reposData) ? reposData.length : 0}
@@ -47,7 +47,7 @@ const Achievements = () => {
         />
 
         <Achievement
-          title="GitHub Member Since"
+          title={t("achievements.titles.member")}
           loading={loadingMember}
           data={memberData}
           number={null}
@@ -56,7 +56,7 @@ const Achievements = () => {
         />
 
         <Achievement
-          title="Projects Created"
+          title={t("achievements.titles.projects_created")}
           loading={false}
           data={null}
           number="+20"
@@ -65,7 +65,7 @@ const Achievements = () => {
         />
 
         <Achievement
-          title="Successful Works"
+          title={t("achievements.titles.successful_works")}
           loading={false}
           data={null}
           number="+5"
