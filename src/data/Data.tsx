@@ -19,7 +19,7 @@ export const Data = () => {
   const PROJECTS = [
     {
       title: `${t("projects.project_bienes_raices.title")}`,
-      image: "project1",
+      image: "bienesraices",
       description:
         `${t("projects.project_bienes_raices.description")}`,
       github:
@@ -31,7 +31,7 @@ export const Data = () => {
     },
     {
       title: `${t("projects.project_landing_page.title")}`,
-      image: "project5",
+      image: "landingpage",
       description:
       `${t("projects.project_landing_page.description")}`,
       github: "https://github.com/ARLA-Dev/drayuleimaperez",
