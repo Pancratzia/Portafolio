@@ -1,8 +1,12 @@
+import { useTranslation } from "react-i18next";
 import Navbar from "./Navbar";
 import { Social } from "./Social";
 
 
 const Header = () => {
+
+  const [t, i18n] = useTranslation("global");
+
   return (
     <div className="header">
       <div className="header__grid">
@@ -13,7 +17,7 @@ const Header = () => {
             </a>
           </h1>
           <h2 className="header__alias">Pancratzia</h2>
-          <p className="header__subtitle">FullStack Developer</p>
+          <p className="header__subtitle">{t("header.subtitle")}</p>
         </div>
         <div className="header__socials">
 
