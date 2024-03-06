@@ -15,15 +15,15 @@ const Contact = () => {
 
     if (!name.value || !email.value || !message.value) {
       Swal.fire({
-        title: "Error!",
-        text: "Please fill in all the fields.",
+        title: `${t("Swal.titles.error")}`,
+        text: `${t("Swal.messages.errors.fields")}`,
         icon: "error",
       });
       return;
     } else if (!validator.validate(email.value)) {
       Swal.fire({
-        title: "Error!",
-        text: "Please enter a valid email address.",
+        title: `${t("Swal.titles.error")}`,
+        text: `${t("Swal.messages.errors.email")}`,
         icon: "error",
       });
       return;
@@ -39,8 +39,8 @@ const Contact = () => {
           (result: any) => {
             if (result.text === "OK") {
               Swal.fire({
-                title: "Email sent!",
-                text: "Thank you for reaching out. I'll get back to you as soon as possible.",
+                title: `${t("Swal.titles.email_sent")}`,
+                text: `${t("Swal.messages.email_sent")}`,
                 icon: "success",
               });
             }
@@ -50,8 +50,8 @@ const Contact = () => {
           (error: any) => {
             console.log(error.text);
             Swal.fire({
-              title: "Error!",
-              text: "Something went wrong. Please try again later.",
+              title: `${t("Swal.titles.error")}`,
+              text: `${t("Swal.messages.errors.something_went_wrong")}`,
               icon: "error",
             });
           }
@@ -68,50 +68,49 @@ const Contact = () => {
         onSubmit={sendEmail}
       >
         <legend className="contact__legend">
-          Want to get in touch? Fill out the form below and I will get back to
-          you as soon as possible.
+          {t("contact.contact_legend")}
         </legend>
 
         <fieldset className="contact__fieldset">
-          <legend className="contact__legend--fieldset">Contact Info</legend>
+          <legend className="contact__legend--fieldset">{t("contact.contact_info")}</legend>
 
           <div className="contact__field">
             <label className="contact__label" htmlFor="name">
-              Name
+              {t("contact.labels.name")}
             </label>
             <input
               className="contact__input"
               type="text"
               id="name"
               name="name"
-              placeholder="Enter your full name"
+              placeholder={t("contact.placeholders.name")}
               required
             />
           </div>
 
           <div className="contact__field">
             <label className="contact__label" htmlFor="email">
-              Email
+              {t("contact.labels.email")}
             </label>
             <input
               className="contact__input"
               type="email"
               id="email"
               name="email"
-              placeholder="Enter your email"
+              placeholder={t("contact.placeholders.email")}
               required
             />
           </div>
 
           <div className="contact__field--textarea">
             <label className="contact__label" htmlFor="message">
-              Message
+              {t("contact.labels.message")}
             </label>
             <textarea
               className="contact__textarea"
               id="message"
               name="message"
-              placeholder="Enter your message"
+              placeholder={t("contact.placeholders.message")}
               required
             ></textarea>
           </div>
@@ -120,10 +119,10 @@ const Contact = () => {
         <div className="contact__actions">
           <input
             type="reset"
-            value="Reset"
+            value={t("contact.buttons.reset")}
             className="contact__submit--reset"
           />
-          <input className="contact__submit" type="submit" value="Submit" />
+          <input className="contact__submit" type="submit" value={t("contact.buttons.submit")}/>
         </div>
       </form>
     </section>

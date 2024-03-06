@@ -26,12 +26,44 @@
     "question_cv": "¿Quieres saber más sobre mí?",
     "read_my_cv": "¡Lee mi CV!"
   },
-    "achievements":{
-        "titles": {
-            "repositories": "Repositorios de GitHub",
-            "member": "Miembro de GitHub Desde",
-            "projects_created": "Proyectos Creados",
-            "successful_works": "Trabajos Exitosos"
-        }
+  "achievements": {
+    "titles": {
+      "repositories": "Repositorios de GitHub",
+      "member": "Miembro de GitHub Desde",
+      "projects_created": "Proyectos Creados",
+      "successful_works": "Trabajos Exitosos"
     }
+  },
+  "Swal": {
+    "titles": {
+      "error": "¡Error!",
+      "email_sent": "¡Email enviado!"
+    },
+    "messages": {
+      "errors": {
+        "fields": "Por favor, rellene todos los campos.",
+        "email": "Por favor, introduzca una dirección de correo electrónico válida.",
+        "something_went_wrong": "Algo salió mal. Por favor, vuelva a intentarlo más tarde."
+      },
+      "email_sent": "Gracias por contactarme. ¡Te responderé lo antes posible!"
+    }
+  },
+  "contact": {
+    "contact_legend": "¿Quieres contactarme? Rellena el siguiente formulario y me pondré en contacto contigo lo antes posible.",
+    "contact_info": "Información de Contacto",
+    "labels": {
+      "name": "Nombre",
+      "email": "Correo",
+      "message": "Mensaje"
+    },
+    "placeholders":{
+        "name": "Escribe tu nombre completo...",
+        "email": "Escribe tu correo electrónico...",
+        "message": "Escribe tu mensaje..."
+    },
+    "buttons": {
+      "submit": "Enviar",
+      "reset": "Limpiar"
+    }
+  }
 }
