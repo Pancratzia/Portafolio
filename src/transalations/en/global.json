@@ -2,5 +2,14 @@
     "header":{
         "subtitle": "FullStack Developer",
         "switch": "Español"
+    },
+    "navbar":{
+        "links":{
+            "about_me": "About me",
+            "achievements": "Achievements",
+            "skills": "Skills",
+            "projects": "Projects",
+            "contact": "Contact"
+        }
     }
 }

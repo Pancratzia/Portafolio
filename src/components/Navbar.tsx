@@ -1,7 +1,10 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const [t] = useTranslation("global");
 
   const smoothScrollTo = (e: { preventDefault: () => void; }, id: string) => {
     e.preventDefault();
@@ -15,11 +18,11 @@ const Navbar = () => {
   };
 
   const navbarLinks = [
-    { text: "About Me", href: "#about" },
-    { text: "Achievements", href: "#achievements" },
-    { text: "Skills", href: "#skills" },
-    { text: "Projects", href: "#projects" },
-    { text: "Contact", href: "#contact" },
+    { text: `${t("navbar.links.about_me")}`, href: "#about" },
+    { text: `${t("navbar.links.achievements")}`, href: "#achievements" },
+    { text: `${t("navbar.links.skills")}`, href: "#skills" },
+    { text: `${t("navbar.links.projects")}`, href: "#projects" },
+    { text: `${t("navbar.links.contact")}`, href: "#contact" },
   ];
 
   const handleClick = () => {

@@ -2,5 +2,14 @@
     "header":{
         "subtitle": "Desarrolladora FullStack",
         "switch": "English"
+    },
+    "navbar":{
+        "links":{
+            "about_me": "Sobre Mí",
+            "achievements": "Logros",
+            "skills": "Habilidades",
+            "projects": "Proyectos",
+            "contact": "Contacto"
+        }
     }
 }
