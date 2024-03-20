@@ -646,6 +646,8 @@ ul {
 }
 .project__tags {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1rem;

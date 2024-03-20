@@ -27,6 +27,14 @@ export const Data = () => {
       tags: ["HTML", "CSS", "JavaScript", "AOS", "SwiperJS", "Vercel", "Google Search", "Landing Page", "SEO", "Google Search", "Leaflet"],
     },
     {
+      title: `${t("projects.projects_quiz_app.title")}`,
+      image: "quizapp",
+      description: `${t("projects.projects_quiz_app.description")}`,
+      github: "https://github.com/Pancratzia/Monthly-Projects/tree/main/quiz-app",
+      demo: "https://pancratzia-quizapp.netlify.app/",
+      tags: ["HTML", "CSS", "JavaScript", "React", "React Custom Hooks", "Redux", "Firebase", "Netlify", "Game", "Ranking"],
+    },
+    {
       title: `${t("projects.projects_starwars_wiki.title")}`,
       image: "starwarswiki",
       description: `${t("projects.projects_starwars_wiki.description")}`,

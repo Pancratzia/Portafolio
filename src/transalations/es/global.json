@@ -110,6 +110,10 @@
     "projects_starwars_wiki":{
         "title": "Star Wars Wiki",
         "description": "Una wiki de StarWars creada con React usando Custom Hooks, React Context y StarWars API. El proyecto también inlcuye un filtro para buscar personajes por nombre, y abre un Modal cuando un personaje es clickeado, que muestra más información sobre ellos."
+    },
+    "projects_quiz_app":{
+        "title": "Quiz App",
+        "description": "Una aplicación web para jugar un quiz de 10 preguntas sobre programación creada con React, Redux y Firebase. Permite jugar tantas veces como se desee y muestra un ranking con los diez mejores jugadores."
     }
   }
 }
