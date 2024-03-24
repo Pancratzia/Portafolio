@@ -1,8 +1,6 @@
 @use "../base/variables" as v;
 @use "../base/mixins" as m;
 
-
-/** TODO: Mejorar el estilo de los labels del formulario **/
 .contact {
   margin: 3rem auto;
 
@@ -71,6 +69,11 @@
 
   &__label {
     font-weight: v.$bold;
+    
+    @include m.tablet {
+      width: 8rem;
+      text-align: right;
+    }
   }
 
   &__input, &__textarea {

@@ -855,6 +855,12 @@ ul {
 .contact__label {
   font-weight: 700;
 }
+@media (min-width: 768px) {
+  .contact__label {
+    width: 8rem;
+    text-align: right;
+  }
+}
 .contact__input, .contact__textarea {
   padding: 0.5rem 1rem;
   width: 100%;
