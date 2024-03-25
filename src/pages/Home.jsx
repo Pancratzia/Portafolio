@@ -1,8 +1,8 @@
 import RoundedPicture from "../components/utils/RoundedPicture";
 import RedirectLinkButton from "../components/utils/RedirectLinkButton";
 import { motion } from "framer-motion";
-import Header from "../components/utils/Home/Header";
-import Socials from "../components/utils/Home/Socials";
+import Header from "../components/Home/Header";
+import Socials from "../components/Home/Socials";
 
 const Home = () => {
   return (

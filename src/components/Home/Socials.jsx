@@ -1,5 +1,5 @@
-import { socials } from "../../../data/data";
-import SocialSquare from "../SocialSquare";
+import { socials } from "../../data/data";
+import SocialSquare from "../utils/SocialSquare";
 
 
 const Socials = () => {

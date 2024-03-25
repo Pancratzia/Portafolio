@@ -2,6 +2,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 
 import { AnimatePresence } from "framer-motion";
+import About from "./pages/About";
 
 const AppRoutes = () => {
   const location = useLocation();
@@ -10,7 +11,7 @@ const AppRoutes = () => {
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<div>About Me</div>} />
+        <Route path="/about" element={<About />} />
         <Route path="/skills" element={<div>Skills</div>} />
         <Route path="/projects" element={<div>Projects</div>} />
         <Route path="/contact" element={<div>Contact Me</div>} />
