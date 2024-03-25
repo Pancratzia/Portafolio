@@ -1,6 +1,7 @@
 import Header from "../components/Layouts/Header";
 import { motion } from "framer-motion";
 import AboutMe from "../components/About/AboutMe";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -15,6 +16,10 @@ const About = () => {
 
       <div className="mx-5">
         <AboutMe />
+      </div>
+
+      <div className="w-full flex justify-center bg-indigo-500 my-5 py-2">
+        <Link className="font-bold uppercase text-indigo-100" to={"https://drive.google.com/file/d/1WLwEsZ-HxfsULa-ulTUeLAwWk9sYMwou/view"} target="_blank"> Read My CV </Link>
       </div>
     </motion.div>
   );
