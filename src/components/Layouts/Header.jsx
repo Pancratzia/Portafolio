@@ -8,12 +8,12 @@ const Header = ({ title, pageName }) => {
 
   return (
     <>
-      <nav className="container my-0 mx-auto text-center text-white mb-6 py-2 md:py-0">
+      <nav className="container my-0 mx-auto text-center text-slate-100 mb-6 py-2 md:py-0">
         <ul className="flex justify-center items-center gap-10 md:gap-8">
           {newRoutes.map((route, index) => (
             <li key={index}>
               <Link
-                className="flex justify-center items-center gap-2"
+                className="flex justify-center items-center gap-2 text-slate-100 hover:text-purple-200"
                 to={route.link}
               >
                 <route.Icon className="w-6 h-6" />

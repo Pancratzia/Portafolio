@@ -1,7 +1,6 @@
 import Header from "../components/Layouts/Header";
 import { motion } from "framer-motion";
 import AboutMe from "../components/About/AboutMe";
-import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -18,8 +17,33 @@ const About = () => {
         <AboutMe />
       </div>
 
-      <div className="w-full flex justify-center bg-indigo-500 my-5 py-2">
-        <Link className="font-bold uppercase text-indigo-100" to={"https://drive.google.com/file/d/1WLwEsZ-HxfsULa-ulTUeLAwWk9sYMwou/view"} target="_blank"> Read My CV </Link>
+      <div className="mx-3 md:mx-0">
+        <div className="container my-5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 ">
+          <div className="bg-slate-100 bg-opacity-35 p-5 rounded text-center text-slate-950 inline-block border-8 border-slate-950 border-t-yellow-600">
+            <h4 className="font-bold uppercase fluid-lg text-yellow-600">
+              GitHub Repositories
+            </h4>
+            <h3 className="font-bold fluid-4xl text-yellow-600">20</h3>
+          </div>
+          <div className="bg-slate-100 bg-opacity-35 p-5 rounded text-center text-slate-950 inline-block border-8 border-slate-950 border-t-yellow-600">
+            <h4 className="font-bold uppercase fluid-lg text-yellow-600">
+              GitHub Repositories
+            </h4>
+            <h3 className="font-bold fluid-4xl text-yellow-600">20</h3>
+          </div>
+          <div className="bg-slate-100 bg-opacity-35 p-5 rounded text-center text-slate-950 inline-block border-8 border-slate-950 border-t-yellow-600">
+            <h4 className="font-bold uppercase fluid-lg text-yellow-600">
+              GitHub Repositories
+            </h4>
+            <h3 className="font-bold fluid-4xl text-yellow-600">20</h3>
+          </div>
+          <div className="bg-slate-100 bg-opacity-35 p-5 rounded text-center text-slate-950 inline-block border-8 border-slate-950 border-t-yellow-600">
+            <h4 className="font-bold uppercase fluid-lg text-yellow-600">
+              GitHub Repositories
+            </h4>
+            <h3 className="font-bold fluid-4xl text-yellow-600">20</h3>
+          </div>
+        </div>
       </div>
     </motion.div>
   );
