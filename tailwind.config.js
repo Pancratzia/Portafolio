@@ -7,13 +7,16 @@ export default {
   theme: {
     extend: {
       animation: {
-        gradient: "gradient 5s linear infinite",
+        gradient: "gradient 8s linear infinite",
       },
       keyframes: {
         gradient: {
           to: { "background-position": "200% center" },
         },
       },
+      fontFamily: {
+        display: ["Titillium Web", "sans-serif"],
+      }
     },
   },
   plugins: [

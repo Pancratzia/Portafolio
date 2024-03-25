@@ -9,10 +9,10 @@ const Home = () => {
     >
       {/* main title */}
       <header className="mb-6 flex items-center justify-center flex-col">
-        <h1 className="text-4xl md:fluid-5xl py-1 md:py-5 font-extrabold">
+        <h1 className="fluid-4xl py-1 md:py-5 font-extrabold">
           <AnimatedText text={"< Laura Ortega />"} />
         </h1>
-        <h3 className="mt-5 text-2xl md:text-3xl font-bold inline-block text-transparent text-stroke text-stroke-white ">
+        <h3 className="mt-5 fluid-2xl font-bold inline-block text-transparent text-stroke text-stroke-white ">
           FullStack Web Developer
         </h3>
       </header>
