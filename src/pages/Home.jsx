@@ -1,3 +1,5 @@
+import RoundedPicture from "../components/utils/RoundedPicture";
+
 const Home = () => {
   return (
     <div
@@ -13,19 +15,12 @@ const Home = () => {
           FullStack Web Developer
         </h3>
       </header>
-      {/* cicle for self picture */}
 
-      <div className="w-80 h-80 md:w-96 md:h-96 rounded-full bg-[linear-gradient(to_right,theme(colors.purple.800),theme(colors.indigo.500),theme(colors.yellow.600),theme(colors.indigo.500),theme(colors.purple.800))] bg-[length:200%_auto] animate-gradient border-4 border-transparent">
-        <picture>
-          <source srcSet="./img/personal/profile.avif" type="image/avif" />
-          <source srcSet="./img/personal/profile.webp" type="image/webp" />
-
-          <img
-            src="./img/personal/profile.png"
-            alt=" profile picture for Laura Ortega"
-            className="rounded-full " 
-          />
-        </picture>
+      <div className="w-80 h-80 md:w-96 md:h-96">
+        <RoundedPicture
+          imageUrl="./img/personal/profile"
+          description="Picture with an animated gradient"
+        />
       </div>
     </div>
   );
