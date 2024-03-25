@@ -26,5 +26,5 @@ SocialSquare.propTypes = {
 
 SocialSquare.defaultProps = {
   color: 'text-indigo-100',
-  hoverColor: 'hover:text-yellow-100'
+  hoverColor: 'hover:text-purple-200'
 }
