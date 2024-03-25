@@ -1,23 +1,23 @@
+/* eslint-disable no-undef */
 
 /** @type {import('tailwindcss').Config} */
-
 
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       animation: {
-        'gradient': 'gradient 5s linear infinite',
+        gradient: "gradient 5s linear infinite",
       },
       keyframes: {
-        'gradient': {
-          to: { 'background-position': '200% center' },
-        }
-      }          
+        gradient: {
+          to: { "background-position": "200% center" },
+        },
+      },
     },
   },
   plugins: [
-    // eslint-disable-next-line no-undef
     require("@designbycode/tailwindcss-text-stroke"),
+    require("tailwind-fluid-typography")
   ],
 };
