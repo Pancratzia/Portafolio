@@ -5,7 +5,7 @@ import SocialSquare from "../utils/SocialSquare";
 const Socials = () => {
   return (
     <div className="w-full my-5 py-2">
-        <div className="flex justify-center items-center gap-6">
+        <div className="flex justify-center items-center gap-10 md:gap-6">
             {socials.map((social, index) => (
                 <SocialSquare
                     key={index}
