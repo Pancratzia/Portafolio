@@ -6,7 +6,7 @@ import {
   FaLinkedin
 } from "react-icons/fa6";
 import SocialSquare from "../components/utils/SocialSquare";
-import { Link } from "react-router-dom";
+import RedirectLinkButton from "../components/utils/RedirectLinkButton";
 
 const Home = () => {
   return (
@@ -55,12 +55,7 @@ const Home = () => {
       {/* Go To "About Me" Page */}
 
       <div className="flex justify-center mt-5">
-        <Link
-          to="/about"
-          className="flex justify-center items-center w-[max-content] rounded-full gap-1 px-4 py-2 fluid-xl border-2 border-indigo-100 transition duration-300 font-bold hover:border-purple-200 text-indigo-100 hover:text-purple-200"
-        >
-          About Me
-        </Link>
+        <RedirectLinkButton text={"About Me"} link={"/about"} />
       </div>
     </div>
   );
