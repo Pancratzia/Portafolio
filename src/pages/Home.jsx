@@ -1,9 +1,8 @@
-import AnimatedText from "../components/utils/AnimatedText";
 import RoundedPicture from "../components/utils/RoundedPicture";
-import { FaSquareXTwitter, FaSquareGithub, FaLinkedin } from "react-icons/fa6";
-import SocialSquare from "../components/utils/SocialSquare";
 import RedirectLinkButton from "../components/utils/RedirectLinkButton";
 import { motion } from "framer-motion";
+import Header from "../components/utils/Home/Header";
+import Socials from "../components/utils/Home/Socials";
 
 const Home = () => {
   return (
@@ -15,14 +14,7 @@ const Home = () => {
       transition={{ duration: 0.5 }}
     >
       {/* main title */}
-      <header className="container my-0 mx-auto mb-6 flex items-center justify-center flex-col">
-        <h1 className="fluid-4xl py-1 md:py-5 font-extrabold">
-          <AnimatedText text={"< Laura Ortega />"} />
-        </h1>
-        <h3 className="fluid-2xl font-bold inline-block text-transparent text-stroke text-stroke-white ">
-          FullStack Web Developer
-        </h3>
-      </header>
+      <Header />
 
       <motion.div
         className="container my-0 mx-auto w-80 h-80 md:w-96 md:h-96"
@@ -39,27 +31,7 @@ const Home = () => {
 
       {/* Socials */}
 
-      <div className="w-full my-5 py-2">
-        <div className="flex justify-center items-center gap-6">
-          <SocialSquare
-            Icon={FaSquareXTwitter}
-            text="Twitter X"
-            links="https://twitter.com/Pancratzia"
-          />
-
-          <SocialSquare
-            Icon={FaSquareGithub}
-            text="Github X"
-            links="https://github.com/Pancratzia"
-          />
-
-          <SocialSquare
-            Icon={FaLinkedin}
-            text="Linkedin X"
-            links="https://www.linkedin.com/in/leortegaperez/"
-          />
-        </div>
-      </div>
+      <Socials />
 
       {/* Go To "About Me" Page */}
 
