@@ -17,7 +17,7 @@ const Home = () => {
       <Header />
 
       <motion.div
-        className="container my-0 mx-auto w-80 h-80 md:w-96 md:h-96"
+        className="container w-80 h-80 md:w-96 md:h-96"
         initial={{ rotate: 45, scale: 0.5, opacity: 0 }}
         animate={{ rotate: 0, scale: 1, opacity: 1 }}
         exit={{ rotate: 45, scale: 0.5, opacity: 0 }}

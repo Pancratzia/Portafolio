@@ -18,9 +18,9 @@ const About = () => {
       </main>
 
       <div className="mx-5">
-        <div className="container mx-auto my-0 grid grid-cols-[repeat(1,1fr)] md:grid-cols-[repeat(2,1fr)] gap-5 items-center">
-          <div className="rounded-xl p-5 text-slate-100 border-2 border-yellow-600">
-            <h3 className="font-bold fluid-2xl uppercase text-center mb-5">
+        <div className="container grid grid-cols-[repeat(1,1fr)] md:grid-cols-[repeat(2,1fr)] gap-5 items-center">
+          <div className="rounded-xl p-5 text-slate-100 border-2 border-indigo-100">
+            <h3 className="font-bold fluid-lg uppercase text-center mb-5">
               Interests
             </h3>
 
@@ -33,8 +33,8 @@ const About = () => {
 
           </div>
 
-          <div className="rounded-xl p-5 text-slate-100 border-2 border-yellow-600">
-            <h3 className="font-bold fluid-2xl uppercase text-center mb-5">
+          <div className="rounded-xl p-5 text-slate-100 border-2 border-indigo-100">
+            <h3 className="font-bold fluid-lg uppercase text-center mb-5">
               Languages
             </h3>
 

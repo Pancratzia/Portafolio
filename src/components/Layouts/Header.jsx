@@ -8,7 +8,7 @@ const Header = ({ title, pageName }) => {
 
   return (
     <>
-      <nav className="container my-0 mx-auto text-center text-slate-100 mb-6 py-2 md:py-0">
+      <nav className="container text-center text-slate-100 mb-6 py-2 md:py-0">
         <ul className="flex justify-center items-center gap-10 md:gap-8">
           {newRoutes.map((route, index) => (
             <li key={index}>
@@ -26,7 +26,7 @@ const Header = ({ title, pageName }) => {
         </ul>
       </nav>
 
-      <header className="container my-0 mx-auto flex items-center justify-center flex-col text-white ">
+      <header className="container flex items-center justify-center flex-col text-white ">
         <h1 className="fluid-4xl py-1 md:py-5 font-extrabold">
           <AnimatedText text={title} />
         </h1>
