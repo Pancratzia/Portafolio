@@ -5,7 +5,7 @@ const Achievements = () => {
     "https://api.github.com/users/pancratzia"
   );
   return (
-    <section className="container my-5 grid grid-cols-1 md:grid-cols-2 gap-5 ">
+    <section className="my-5 grid grid-cols-1 md:grid-cols-2 gap-5 ">
       <article className="bg-slate-100 opacity-90 p-5 rounded-xl text-center bg-gradient-to-r from-purple-100 to-slate-100">
         <h4 className="font-bold uppercase fluid-lg text-purple-800">
           GitHub Repositories
