@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 import AboutMe from "../components/About/AboutMe";
 
 const About = () => {
-  
-
   return (
     <motion.div
       className="min-h-screen py-6 font-d"
@@ -15,11 +13,41 @@ const About = () => {
     >
       <Header title={"< About Me />"} pageName={"About Me"} />
 
-      <div className="mx-5">
+      <main className="mx-5 lg:mt-10">
         <AboutMe />
-      </div>
+      </main>
 
-      
+      <div className="mx-5">
+        <div className="container mx-auto my-0 grid grid-cols-[repeat(1,1fr)] md:grid-cols-[repeat(2,1fr)] gap-5 items-center">
+          <div className="rounded-xl p-5 text-slate-100 border-2 border-yellow-600">
+            <h3 className="font-bold fluid-2xl uppercase text-center mb-5">
+              Interests
+            </h3>
+
+            <ul className="text-center grid grid-cols-2">
+              <li>Music</li>
+              <li>Reading</li>
+              <li>TFT</li>
+              <li>Dogs</li>
+            </ul>
+
+          </div>
+
+          <div className="rounded-xl p-5 text-slate-100 border-2 border-yellow-600">
+            <h3 className="font-bold fluid-2xl uppercase text-center mb-5">
+              Languages
+            </h3>
+
+            <p>
+              Spanish: <span>Native</span>
+            </p>
+
+            <p>
+              English: <span>Fluent</span>
+            </p>
+          </div>
+        </div>
+      </div>
     </motion.div>
   );
 };
