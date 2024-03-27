@@ -1,4 +1,4 @@
-import { FaSquareXTwitter, FaSquareGithub, FaLinkedin, FaHouse, FaUser, FaCubesStacked, FaLaptopCode, FaEnvelope } from "react-icons/fa6";
+import { FaSquareXTwitter, FaSquareGithub, FaLinkedin, FaHouse, FaUser, FaCubesStacked, FaLaptopCode, FaEnvelope, FaMusic, FaBookOpenReader, FaDog, FaGamepad } from "react-icons/fa6";
 
 export const socials = [
     {
@@ -43,5 +43,35 @@ export const routes = [
         Icon: FaEnvelope,
         text: "Contact",
         link: "/contact"
+    }
+]
+
+export const interests = [
+    {
+        Icon: FaMusic,
+        text: "Music",
+    },
+    {
+        Icon: FaBookOpenReader,
+        text: "Reading",
+    },
+    {
+        Icon: FaDog,
+        text: "Dogs",
+    },
+    {
+        Icon: FaGamepad,
+        text: "Videogames",
+    }
+]
+
+export const languages = [
+    {
+        text: "Spanish",
+        level: "Native"
+    },
+    {
+        text: "English",
+        level: "Fluent"
     }
 ]

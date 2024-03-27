@@ -1,6 +1,7 @@
 import Header from "../components/Layouts/Header";
 import { motion } from "framer-motion";
 import AboutMe from "../components/About/AboutMe";
+import ExtraInfo from "../components/About/ExtraInfo";
 
 const About = () => {
   return (
@@ -17,34 +18,8 @@ const About = () => {
         <AboutMe />
       </main>
 
-      <div className="container grid grid-cols-[repeat(1,1fr)] md:grid-cols-[repeat(2,1fr)] gap-5 items-center">
-        <div className="rounded-xl p-5 text-slate-100 border-2 border-indigo-100">
-          <h3 className="font-bold fluid-lg uppercase text-center mb-5">
-            Interests
-          </h3>
-
-          <ul className="text-center grid grid-cols-2">
-            <li>Music</li>
-            <li>Reading</li>
-            <li>TFT</li>
-            <li>Dogs</li>
-          </ul>
-        </div>
-
-        <div className="rounded-xl p-5 text-slate-100 border-2 border-indigo-100">
-          <h3 className="font-bold fluid-lg uppercase text-center mb-5">
-            Languages
-          </h3>
-
-          <p>
-            Spanish: <span>Native</span>
-          </p>
-
-          <p>
-            English: <span>Fluent</span>
-          </p>
-        </div>
-      </div>
+      <ExtraInfo />
+      
     </motion.div>
   );
 };
