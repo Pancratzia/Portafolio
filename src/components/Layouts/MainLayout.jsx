@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const MainLayout = ({ children }) => {
   return (
     <motion.div
-      className="min-h-screen py-6 font-d"
+      className="min-h-screen py-6 md:pb-0 font-d"
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.5 }}
