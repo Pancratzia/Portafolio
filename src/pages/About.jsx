@@ -4,7 +4,7 @@ import MainLayout from "../components/Layouts/MainLayout";
 
 const About = () => {
   return (
-    <MainLayout>
+    <MainLayout title={"< About Me />"} pageName={"About Me"}>
       <main className="lg:mt-10">
         <AboutMe />
       </main>
