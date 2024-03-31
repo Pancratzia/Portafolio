@@ -1,4 +1,14 @@
+import { useState } from "react";
+import useFetch from "../../hooks/useFetch";
+import { useEffect } from "react";
+
+const defaultImageURL =
+  "https://st3.depositphotos.com/4111759/13425/v/450/depositphotos_134255626-stock-illustration-avatar-male-profile-gray-person.jpg";
+
 const Form = () => {
+  const [githubUserToFind, setGithubUserToFind] = useState("");
+  const [githubUserPicture, setGithubUserPicture] = useState(defaultImageURL);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const { name, email, github, message } = e.target;
@@ -19,7 +29,15 @@ const Form = () => {
 
   const resetForm = (form) => {
     form.reset();
+    setGithubUserToFind("");
+    setGithubUserPicture(defaultImageURL);
   };
+
+  useEffect(() => {
+
+    //TODO: Wait till the user stopts typing in the input
+    
+  }, [githubUserToFind]);
 
   return (
     <form
@@ -88,11 +106,7 @@ const Form = () => {
           </label>
 
           <div className="flex items-center gap-3 w-100">
-            <img
-              src="https://avatars.githubusercontent.com/u/54899954?s=400&u=7eb7013709cad1282d621bdc17897c55a107d320&v=4"
-              alt="GitHub Avatar"
-              className="w-12 h-12 rounded-full"
-            />
+            <img src={githubUserPicture} className="w-12 h-12 rounded-full" />
             <input
               type="text"
               name="github"
@@ -100,6 +114,8 @@ const Form = () => {
               placeholder="Your GitHub username..."
               autoComplete="off"
               className="border-2 border-yellow-600 text-slate-950 rounded-md p-1 font-display w-full"
+              onChange={(e) => setGithubUserToFind(e.target.value)}
+              value={githubUserToFind}
             />
           </div>
         </div>
@@ -126,7 +142,7 @@ const Form = () => {
             className="border-2 border-yellow-600 text-slate-950 rounded-md p-1 font-display"
             rows="5"
             cols="30"
-            style={{ resize: "none", formSizing: "content" }}
+            style={{ resize: "vertical", formSizing: "content" }}
           ></textarea>
         </div>
       </fieldset>
