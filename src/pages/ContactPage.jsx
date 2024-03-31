@@ -5,7 +5,7 @@ const ContactPage = () => {
 
   return (
     <MainLayout title={"< Contact Me />"} pageName={"Contact"}>
-      <main className="lg:mt-10">
+      <main className="my-5">
         <Form />
       </main>
     </MainLayout>
