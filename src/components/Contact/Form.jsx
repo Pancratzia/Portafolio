@@ -1,6 +1,6 @@
 import { useState } from "react";
-import useFetch from "../../hooks/useFetch";
 import { useEffect } from "react";
+import axios from "axios";
 
 const defaultImageURL =
   "https://st3.depositphotos.com/4111759/13425/v/450/depositphotos_134255626-stock-illustration-avatar-male-profile-gray-person.jpg";
@@ -8,6 +8,8 @@ const defaultImageURL =
 const Form = () => {
   const [githubUserToFind, setGithubUserToFind] = useState("");
   const [githubUserPicture, setGithubUserPicture] = useState(defaultImageURL);
+  const [githubUserExists, setGithubUserExists] = useState(false);
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -22,6 +24,7 @@ const Form = () => {
       email: email.value,
       github: github.value,
       message: message.value,
+      githubUserExists: githubUserExists,
     });
 
     resetForm(e.target);
@@ -35,7 +38,22 @@ const Form = () => {
 
   useEffect(() => {
 
-    //TODO: Wait till the user stopts typing in the input
+    if (!githubUserToFind || githubUserToFind === "") {
+      setGithubUserExists(false);
+      setGithubUserPicture(defaultImageURL);
+      return;
+    }
+
+    const url = `https://api.github.com/users/${githubUserToFind}`;
+
+    axios.get(url).
+    then((response) => {
+      setGithubUserExists(true);
+      setGithubUserPicture(response.data.avatar_url);
+    }).catch(() => {
+      setGithubUserExists(false);
+      setGithubUserPicture(defaultImageURL);
+    });
     
   }, [githubUserToFind]);
 
