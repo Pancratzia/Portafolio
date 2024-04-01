@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import axios from "axios";
 
 const useFetch = (url, auth = "") => {
   const [data, setData] = useState({});
@@ -7,23 +8,20 @@ const useFetch = (url, auth = "") => {
 
   useEffect(() => {
     setLoading(true);
-    fetch(url, {
-      method: "GET",
+    
+    axios.get(url, {
       headers: {
         "Content-Type": "application/json",
-        Authorization: auth,
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        setData(data);
-      })
-      .catch((error) => {
-        setError(error);
-      })
-      .finally(() => {
-        setLoading(false);
-      });
+        Authorization: auth
+      }
+
+    }).then((response) => {
+      setData(response.data);
+      setLoading(false);
+    }).catch((error) => {
+      setError(error);
+      setLoading(false);
+    });
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
