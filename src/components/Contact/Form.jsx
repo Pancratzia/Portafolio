@@ -9,23 +9,44 @@ const Form = () => {
   const [githubUserToFind, setGithubUserToFind] = useState("");
   const [githubUserPicture, setGithubUserPicture] = useState(defaultImageURL);
   const [githubUserExists, setGithubUserExists] = useState(false);
+  const [errors, setErrors] = useState({});
 
+
+  const setNewError = (key, value) => {
+    setErrors((prev) => {
+      return {
+        ...prev,
+        [key]: value,
+      };
+    });
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const { name, email, github, message } = e.target;
 
-    if (!name.value || !email.value || !message.value) {
-      alert("Please fill all the required fields");
+    setErrors({});
+
+    if (!name.value || !name.value.trim() || name.value.length < 3) {
+      setNewError("name", "Name is required and must be at least 3 characters long");
     }
 
-    console.log({
-      name: name.value,
-      email: email.value,
-      github: github.value,
-      message: message.value,
-      githubUserExists: githubUserExists,
-    });
+    if (!email.value || !email.value.trim() || email.value === "") {
+      setNewError("email", "Email is required");
+    }
+
+    if(!email.value.match(/^[\w-\\.]+@([\w-]+\.)+[\w-]{2,4}$/) && errors.email !== "") {
+      setNewError("email", "Email is not valid");
+    }
+
+    if (!githubUserExists && github.value) {
+      setNewError("github", "Github user doesn't exist");
+    }
+
+    if (message.value === "" || message.value.trim() === "" || !message.value) {
+      setNewError("message", "Message is required");
+    }
+
 
     resetForm(e.target);
   };
@@ -34,10 +55,10 @@ const Form = () => {
     form.reset();
     setGithubUserToFind("");
     setGithubUserPicture(defaultImageURL);
+    setGithubUserExists(false);
   };
 
   useEffect(() => {
-
     if (!githubUserToFind || githubUserToFind === "") {
       setGithubUserExists(false);
       setGithubUserPicture(defaultImageURL);
@@ -46,16 +67,18 @@ const Form = () => {
 
     const url = `https://api.github.com/users/${githubUserToFind}`;
 
-    axios.get(url).
-    then((response) => {
-      setGithubUserExists(true);
-      setGithubUserPicture(response.data.avatar_url);
-    }).catch(() => {
-      setGithubUserExists(false);
-      setGithubUserPicture(defaultImageURL);
-    });
-    
+    axios
+      .get(url)
+      .then((response) => {
+        setGithubUserExists(true);
+        setGithubUserPicture(response.data.avatar_url);
+      })
+      .catch(() => {
+        setGithubUserExists(false);
+        setGithubUserPicture(defaultImageURL);
+      });
   }, [githubUserToFind]);
+
 
   return (
     <form
@@ -85,10 +108,10 @@ const Form = () => {
             name="name"
             id="name"
             placeholder="Your name..."
-            required
             autoComplete="off"
             className="border-2 border-yellow-600 text-slate-950 rounded-md p-1 font-display"
           />
+          {errors.name && <p className="text-red-500 text-center mt-1">{errors.name}</p>}
         </div>
       </fieldset>
 
@@ -109,10 +132,10 @@ const Form = () => {
             name="email"
             id="email"
             placeholder="Your email..."
-            required
             autoComplete="off"
             className="border-2 border-yellow-600 text-slate-950 rounded-md p-1 font-display"
           />
+          {errors.email && <p className="text-red-500 text-center mt-1">{errors.email}</p>}
         </div>
 
         <div className="form-field flex flex-col">
@@ -136,6 +159,7 @@ const Form = () => {
               value={githubUserToFind}
             />
           </div>
+          {errors.github && <p className="text-red-500 text-center mt-1">{errors.github}</p>}
         </div>
       </fieldset>
 
@@ -155,13 +179,14 @@ const Form = () => {
             name="message"
             id="message"
             placeholder="Your message..."
-            required
             autoComplete="off"
             className="border-2 border-yellow-600 text-slate-950 rounded-md p-1 font-display"
             rows="5"
             cols="30"
             style={{ resize: "vertical", formSizing: "content" }}
           ></textarea>
+
+          {errors.message && <p className="text-red-500 text-center mt-1">{errors.message}</p>}
         </div>
       </fieldset>
 
