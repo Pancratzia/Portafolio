@@ -1,93 +1,19 @@
-import { useState } from "react";
-import { useEffect } from "react";
-import axios from "axios";
-import emailjs from "@emailjs/browser";
-
-const defaultImageURL =
-  "https://st3.depositphotos.com/4111759/13425/v/450/depositphotos_134255626-stock-illustration-avatar-male-profile-gray-person.jpg";
+import useForm from "../../hooks/useForm";
 
 const Form = () => {
-  const [githubUserToFind, setGithubUserToFind] = useState("");
-  const [githubUserPicture, setGithubUserPicture] = useState(defaultImageURL);
-  const [githubUserExists, setGithubUserExists] = useState(false);
-  const [errors, setErrors] = useState({});
+  const {
+    githubUserToFind,
+    setGithubUserToFind,
+    githubUserPicture,
+    handleSubmit,
+    errors,
+    setUser,
+    user,
+  } = useForm();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const { name, email, github, message } = e.target;
+  const {name, email, message} = user;
 
-    let newErrors = {};
-
-    if (!name.value || !name.value.trim() || name.value.length < 3) {
-      newErrors = { ...newErrors, name: "Name is required and must be at least 3 characters long" };
-    }
-
-    if (!email.value || !email.value.trim() || email.value === "") {
-      newErrors = { ...newErrors, email: "Email is required" };
-    }
-
-    if(!email.value.match(/^[\w-\\.]+@([\w-]+\.)+[\w-]{2,4}$/) && errors.email !== "" && email.value !== "") {
-      newErrors = { ...newErrors, email: "Email is not valid" };
-    }
-
-    if (!githubUserExists && github.value) {
-      newErrors = { ...newErrors, github: "Github user doesn't exist" };
-    }
-
-    if (message.value === "" || message.value.trim() === "" || !message.value) {
-      newErrors = { ...newErrors, message: "Message is required" };
-    }
-
-    setErrors(newErrors);
-
-    if (Object.keys(newErrors).length > 0) return;
-
-    emailjs.sendForm(
-      
-      import.meta.env.VITE_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-      e.target,
-      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-    ).then((res) => {
-      if (res.status === 200) {
-        alert("Message sent successfully");
-      }
-    }, (error) => {
-      alert(error.text);
-    })
-
-
-    resetForm(e.target);
-  };
-
-  const resetForm = (form) => {
-    form.reset();
-    setGithubUserToFind("");
-    setGithubUserPicture(defaultImageURL);
-    setGithubUserExists(false);
-  };
-
-  useEffect(() => {
-    if (!githubUserToFind || githubUserToFind === "") {
-      setGithubUserExists(false);
-      setGithubUserPicture(defaultImageURL);
-      return;
-    }
-
-    const url = `https://api.github.com/users/${githubUserToFind}`;
-
-    axios
-      .get(url)
-      .then((response) => {
-        setGithubUserExists(true);
-        setGithubUserPicture(response.data.avatar_url);
-      })
-      .catch(() => {
-        setGithubUserExists(false);
-        setGithubUserPicture(defaultImageURL);
-      });
-  }, [githubUserToFind]);
-
+  console.log(user);
 
   return (
     <form
@@ -119,8 +45,12 @@ const Form = () => {
             placeholder="Your name..."
             autoComplete="off"
             className="border-2 border-yellow-600 text-slate-950 rounded-md p-1 font-display"
+            onChange={(e) => setUser({ ...user, name: e.target.value })}
+            value={name}
           />
-          {errors.name && <p className="text-red-500 text-center mt-1">{errors.name}</p>}
+          {errors.name && (
+            <p className="text-red-500 text-center mt-1">{errors.name}</p>
+          )}
         </div>
       </fieldset>
 
@@ -143,8 +73,12 @@ const Form = () => {
             placeholder="Your email..."
             autoComplete="off"
             className="border-2 border-yellow-600 text-slate-950 rounded-md p-1 font-display"
+            onChange={(e) => setUser({ ...user, email: e.target.value })}
+            value={email}
           />
-          {errors.email && <p className="text-red-500 text-center mt-1">{errors.email}</p>}
+          {errors.email && (
+            <p className="text-red-500 text-center mt-1">{errors.email}</p>
+          )}
         </div>
 
         <div className="form-field flex flex-col">
@@ -168,7 +102,9 @@ const Form = () => {
               value={githubUserToFind}
             />
           </div>
-          {errors.github && <p className="text-red-500 text-center mt-1">{errors.github}</p>}
+          {errors.github && (
+            <p className="text-red-500 text-center mt-1">{errors.github}</p>
+          )}
         </div>
       </fieldset>
 
@@ -193,13 +129,22 @@ const Form = () => {
             rows="5"
             cols="30"
             style={{ resize: "vertical", formSizing: "content" }}
+            onChange={(e) => setUser({ ...user, message: e.target.value })}
+            value={message}
           ></textarea>
 
-          {errors.message && <p className="text-red-500 text-center mt-1">{errors.message}</p>}
+          {errors.message && (
+            <p className="text-red-500 text-center mt-1">{errors.message}</p>
+          )}
         </div>
       </fieldset>
 
-      <div className="flex justify-center mt-5">
+      <div className="flex justify-center mt-5 gap-5">
+        <input
+          type="reset"
+          value="Reset"
+          className="flex justify-center items-center w-[max-content] rounded-full gap-1 px-4 py-2 fluid-md border-2 border-slate-300 transition duration-300 font-bold text-slate-300 cursor-pointer"
+        />
         <input
           type="submit"
           value="Send Message"
