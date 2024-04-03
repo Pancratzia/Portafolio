@@ -5,10 +5,11 @@ import emailjs from "@emailjs/browser";
 
 const defaultImageURL = "./img/utils/no-user.jpg";
 
-const initialUser = {
+const initialMail = {
   name: "",
   email: "",
   github: "",
+  subject: "",
   message: "",
 };
 
@@ -18,11 +19,11 @@ const useForm = () => {
   const [githubUserExists, setGithubUserExists] = useState(false);
   const [errors, setErrors] = useState({});
 
-  const [user, setUser] = useState(initialUser);
+  const [mail, setMail] = useState(initialMail);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, email, message } = user;
+    const { name, email, message, subject } = mail;
 
     let newErrors = {};
 
@@ -48,6 +49,10 @@ const useForm = () => {
 
     if (!githubUserExists && githubUserToFind !== "" && githubUserToFind.trim() !== "") {
       newErrors = { ...newErrors, github: "Github user doesn't exist" };
+    }
+
+    if(subject === "" || subject.trim() === "" || !subject) {
+      newErrors = { ...newErrors, subject: "Subject is required" };
     }
 
     if (message === "" || message.trim() === "" || !message) {
@@ -81,12 +86,16 @@ const useForm = () => {
 
   const resetForm = (form) => {
     form.reset();
+    handleResetForm();
+  };
+
+  const handleResetForm = () => {
     setGithubUserToFind("");
     setGithubUserPicture(defaultImageURL);
     setGithubUserExists(false);
     setErrors({});
-    setUser(initialUser);
-  };
+    setMail(initialMail);
+  }
 
   useEffect(() => {
     if (!githubUserToFind || githubUserToFind === "") {
@@ -102,12 +111,12 @@ const useForm = () => {
       .then((response) => {
         setGithubUserExists(true);
         setGithubUserPicture(response.data.avatar_url);
-        setUser({ ...user, github: response.data.login });
+        setMail({ ...mail, github: response.data.login });
       })
       .catch(() => {
         setGithubUserExists(false);
         setGithubUserPicture(defaultImageURL);
-        setUser({ ...user, github: "" });
+        setMail({ ...mail, github: "" });
       });
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [githubUserToFind]);
@@ -121,9 +130,9 @@ const useForm = () => {
     setGithubUserExists,
     errors,
     handleSubmit,
-    resetForm,
-    setUser,
-    user,
+    handleResetForm,
+    mail,
+    setMail
   };
 };
 

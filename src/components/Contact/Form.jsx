@@ -7,11 +7,12 @@ const Form = () => {
     githubUserPicture,
     handleSubmit,
     errors,
-    setUser,
-    user,
+    setMail,
+    mail,
+    handleResetForm
   } = useForm();
 
-  const {name, email, message} = user;
+  const {name, email, message, subject} = mail;
 
   return (
     <form
@@ -43,7 +44,7 @@ const Form = () => {
             placeholder="Your name..."
             autoComplete="off"
             className="border-2 border-yellow-600 text-slate-950 rounded-md p-1 font-display"
-            onChange={(e) => setUser({ ...user, name: e.target.value })}
+            onChange={(e) => setMail({ ...mail, name: e.target.value })}
             value={name}
           />
           {errors.name && (
@@ -71,7 +72,7 @@ const Form = () => {
             placeholder="Your email..."
             autoComplete="off"
             className="border-2 border-yellow-600 text-slate-950 rounded-md p-1 font-display"
-            onChange={(e) => setUser({ ...user, email: e.target.value })}
+            onChange={(e) => setMail({ ...mail, email: e.target.value })}
             value={email}
           />
           {errors.email && (
@@ -111,6 +112,29 @@ const Form = () => {
           Message
         </legend>
 
+        <div className="form-field flex flex-col mb-2">
+
+          <label
+            htmlFor="subject"
+            className="text-slate-100 font-bold fluid-md mb-2"
+          >
+            Subject
+          </label>
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Your subject..."
+            autoComplete="off"
+            className="border-2 border-yellow-600 text-slate-950 rounded-md p-1 font-display"
+            onChange={(e) => setMail({ ...mail, subject: e.target.value })}
+            value={subject}
+          />
+          {errors.subject && (
+            <p className="text-red-500 text-center mt-1">{errors.subject}</p>
+          )}
+        </div>
+
         <div className="form-field flex flex-col">
           <label
             htmlFor="message"
@@ -127,7 +151,7 @@ const Form = () => {
             rows="5"
             cols="30"
             style={{ resize: "vertical", formSizing: "content" }}
-            onChange={(e) => setUser({ ...user, message: e.target.value })}
+            onChange={(e) => setMail({ ...mail, message: e.target.value })}
             value={message}
           ></textarea>
 
@@ -139,8 +163,9 @@ const Form = () => {
 
       <div className="flex justify-center mt-5 gap-5">
         <input
-          type="reset"
+          type="button"
           value="Reset"
+          onClick={handleResetForm}
           className="flex justify-center items-center w-[max-content] rounded-full gap-1 px-4 py-2 fluid-md border-2 border-slate-300 transition duration-300 font-bold text-slate-300 cursor-pointer"
         />
         <input
