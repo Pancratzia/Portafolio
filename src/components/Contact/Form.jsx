@@ -13,8 +13,6 @@ const Form = () => {
 
   const {name, email, message} = user;
 
-  console.log(user);
-
   return (
     <form
       method="POST"
