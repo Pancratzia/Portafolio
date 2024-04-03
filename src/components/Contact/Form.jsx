@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
+import emailjs from "@emailjs/browser";
 
 const defaultImageURL =
   "https://st3.depositphotos.com/4111759/13425/v/450/depositphotos_134255626-stock-illustration-avatar-male-profile-gray-person.jpg";
@@ -11,41 +12,49 @@ const Form = () => {
   const [githubUserExists, setGithubUserExists] = useState(false);
   const [errors, setErrors] = useState({});
 
-
-  const setNewError = (key, value) => {
-    setErrors((prev) => {
-      return {
-        ...prev,
-        [key]: value,
-      };
-    });
-  }
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const { name, email, github, message } = e.target;
 
-    setErrors({});
+    let newErrors = {};
 
     if (!name.value || !name.value.trim() || name.value.length < 3) {
-      setNewError("name", "Name is required and must be at least 3 characters long");
+      newErrors = { ...newErrors, name: "Name is required and must be at least 3 characters long" };
     }
 
     if (!email.value || !email.value.trim() || email.value === "") {
-      setNewError("email", "Email is required");
+      newErrors = { ...newErrors, email: "Email is required" };
     }
 
-    if(!email.value.match(/^[\w-\\.]+@([\w-]+\.)+[\w-]{2,4}$/) && errors.email !== "") {
-      setNewError("email", "Email is not valid");
+    if(!email.value.match(/^[\w-\\.]+@([\w-]+\.)+[\w-]{2,4}$/) && errors.email !== "" && email.value !== "") {
+      newErrors = { ...newErrors, email: "Email is not valid" };
     }
 
     if (!githubUserExists && github.value) {
-      setNewError("github", "Github user doesn't exist");
+      newErrors = { ...newErrors, github: "Github user doesn't exist" };
     }
 
     if (message.value === "" || message.value.trim() === "" || !message.value) {
-      setNewError("message", "Message is required");
+      newErrors = { ...newErrors, message: "Message is required" };
     }
+
+    setErrors(newErrors);
+
+    if (Object.keys(newErrors).length > 0) return;
+
+    emailjs.sendForm(
+      
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      e.target,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    ).then((res) => {
+      if (res.status === 200) {
+        alert("Message sent successfully");
+      }
+    }, (error) => {
+      alert(error.text);
+    })
 
 
     resetForm(e.target);
