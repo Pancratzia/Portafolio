@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
 import emailjs from "@emailjs/browser";
+import { SuccessAlert, ErrorAlert } from "../components/utils/Alerts";
 
 const defaultImageURL = "./img/utils/no-user.jpg";
 
@@ -46,12 +47,15 @@ const useForm = () => {
       newErrors = { ...newErrors, email: "Email is not valid" };
     }
 
-
-    if (!githubUserExists && githubUserToFind !== "" && githubUserToFind.trim() !== "") {
+    if (
+      !githubUserExists &&
+      githubUserToFind !== "" &&
+      githubUserToFind.trim() !== ""
+    ) {
       newErrors = { ...newErrors, github: "Github user doesn't exist" };
     }
 
-    if(subject === "" || subject.trim() === "" || !subject) {
+    if (subject === "" || subject.trim() === "" || !subject) {
       newErrors = { ...newErrors, subject: "Subject is required" };
     }
 
@@ -71,17 +75,23 @@ const useForm = () => {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
-        (res) => {
+        async (res) => {
           if (res.status === 200) {
-            alert("Message sent successfully");
+            await SuccessAlert({
+              title: "Message sent!",
+              text: "Thank you for your message. I'll get back to you as soon as possible",
+            });
+            resetForm(e.target);
           }
         },
-        (error) => {
-          alert(error.text);
+        () => {
+          ErrorAlert({
+            title: "Error sending message",
+            text: "Please try again later",
+          });
         }
       );
 
-    resetForm(e.target);
   };
 
   const resetForm = (form) => {
@@ -95,7 +105,7 @@ const useForm = () => {
     setGithubUserExists(false);
     setErrors({});
     setMail(initialMail);
-  }
+  };
 
   useEffect(() => {
     if (!githubUserToFind || githubUserToFind === "") {
@@ -118,7 +128,7 @@ const useForm = () => {
         setGithubUserPicture(defaultImageURL);
         setMail({ ...mail, github: "" });
       });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [githubUserToFind]);
 
   return {
@@ -132,7 +142,7 @@ const useForm = () => {
     handleSubmit,
     handleResetForm,
     mail,
-    setMail
+    setMail,
   };
 };
 
