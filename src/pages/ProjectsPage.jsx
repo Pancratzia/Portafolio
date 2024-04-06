@@ -16,6 +16,8 @@ const ProjectsPage = () => {
               ))}
             </YellowCard>
 
+            <h3 className="font-bold fluid-2xl uppercase text-center my-5 italic   text-yellow-600">Extra Projects</h3>
+
             <YellowCard>
               
             </YellowCard>
