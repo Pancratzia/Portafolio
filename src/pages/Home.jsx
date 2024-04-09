@@ -3,6 +3,7 @@ import RedirectLinkButton from "../components/utils/RedirectLinkButton";
 import { motion } from "framer-motion";
 import Header from "../components/Home/Header";
 import Socials from "../components/utils/Socials";
+import ChangeLangBTN from "../components/utils/ChangeLangBTN";
 
 const Home = () => {
   return (
@@ -13,6 +14,9 @@ const Home = () => {
       exit={{ opacity: 0, scale: 0.5 }}
       transition={{ duration: 0.5 }}
     >
+      <div className="absolute w-0 h-0">
+        <ChangeLangBTN />
+      </div>
       {/* main title */}
       <Header />
 
