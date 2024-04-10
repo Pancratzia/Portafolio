@@ -3,6 +3,10 @@
   "meta_title": "Portfolio - Laura Ortega",
   "title": "FullStack Web Developer",
   "name": "Laura Ortega",
+  "messages": {
+    "loading_simple": "Loading...",
+    "error_simple": "Error..."
+  },
   "buttons": {
     "about_me": "About Me"
   },
@@ -15,8 +19,13 @@
     "projects": "Projects",
     "contact": "Contact",
     "about": "About",
-    "skills": "Skills"
-
+    "skills": "Skills",
+    "interests":{
+      "music":"Music",
+      "reading":"Reading",
+      "dogs":"Dogs",
+      "games":"Games"
+    }
   },
   "alt":{
     "profile_picture":"Profile picture of Laura Ortega"
@@ -26,10 +35,29 @@
       "title":"About Me",
       "cv":{
         "question": "¿Do you want to know more about me?",
-        "answer": "Read my CV!"
+        "answer": "Read my CV!",
+        "link": "https://drive.google.com/file/d/1WLwEsZ-HxfsULa-ulTUeLAwWk9sYMwou/view"
       },
       "info_card": "Driven by an unwavering passion for coding, a love for problem-solving, and an insatiable curiosity to explore, I thrive as a Fullstack developer with an unwavering commitment to excellence. My background in Telematics Engineering has taught me that being a programmer is a journey of perpetual learning and unlearning, a philosophy I apply to every project I undertake. Beyond technical skills, I strive to offer creative, efficient, and adaptable solutions to the specific needs of each client. My goal: to grow personally and professionally every day, constantly evolving as a developer and bringing value to every project I participate in.",
-      "cv_link":"https://drive.google.com/file/d/1WLwEsZ-HxfsULa-ulTUeLAwWk9sYMwou/view"
+      "achievements": {
+        "gh_repos": "GitHub Repositories",
+        "gh_member": "GitHub Member Since"
+      },
+      "interests": "Interests",
+      "languages": {
+        "title": "Languages",
+        "spanish": {
+          "name": "Spanish",
+          "level": "Native"
+        },
+        "english": {
+          "name": "English",
+          "level": "Fluent"
+        }
+      }
     }
+  },
+  "footer": {
+    "copyright": "All Rights Reserved."
   }
 }

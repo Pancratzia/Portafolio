@@ -98,30 +98,30 @@ export const routes = [
 export const interests = [
   {
     Icon: FaMusic,
-    text: "Music",
+    text: "sr-only.interests.music",
   },
   {
     Icon: FaBookOpenReader,
-    text: "Reading",
+    text: "sr-only.interests.reading",
   },
   {
     Icon: FaDog,
-    text: "Dogs",
+    text: "sr-only.interests.dog",
   },
   {
     Icon: FaGamepad,
-    text: "Videogames",
+    text: "sr-only.interests.gaming",
   },
 ];
 
 export const languages = [
   {
-    text: "Spanish",
-    level: "Native",
+    text: "pages.about_me.languages.spanish.name",
+    level: "pages.about_me.languages.spanish.level",
   },
   {
-    text: "English",
-    level: "Fluent",
+    text: "pages.about_me.languages.english.name",
+    level: "pages.about_me.languages.english.level",
   },
 ];
 

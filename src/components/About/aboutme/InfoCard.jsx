@@ -15,7 +15,7 @@ const InfoCard = () => {
         <span className="font-bold text-yellow-500">{t("pages.about_me.cv.question")}</span>
         <Link
           className="font-bold uppercase text-slate-100 hover:text-purple-200 "
-          to={t("pages.about_me.cv_link")}
+          to={t("pages.about_me.cv.link")}
           target="_blank"
         >
           {t("pages.about_me.cv.answer")}

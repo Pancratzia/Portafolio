@@ -3,6 +3,10 @@
   "meta_title": "Portafolio - Laura Ortega",
   "title": "Desarrolladora Web FullStack",
   "name": "Laura Ortega",
+  "messages": {
+    "loading_simple": "Cargando...",
+    "error_simple": "Error..."
+  },
   "buttons": {
     "about_me": "Sobre Mi"
   },
@@ -15,7 +19,13 @@
     "projects": "Proyectos",
     "contact": "Contacto",
     "about": "Sobre Mi",
-    "skills": "Habilidades"
+    "skills": "Habilidades",
+    "interests":{
+      "music":"Música",
+      "reading":"Lectura",
+      "dogs":"Perros",
+      "games":"Juegos"
+    }
   },
   "alt":{
     "profile_picture":"Imagen de perfil de Laura Ortega"
@@ -25,10 +35,29 @@
       "title":"Sobre Mi",
       "cv":{
         "question": "¿Quieres saber más sobre mi?",
-        "answer": "¡Lee mi CV!"
+        "answer": "¡Lee mi CV!",
+        "link": "https://drive.google.com/file/d/1WLwEsZ-HxfsULa-ulTUeLAwWk9sYMwou/view"
       },
       "info_card": "Impulsada por una pasión inquebrantable por la programación, un amor por resolver problemas y una curiosidad insaciable por explorar, me dedico al desarrollo Fullstack con un compromiso inquebrantable con la excelencia. Mi formación en Ingeniería Telemática me ha enseñado que ser programadora es un viaje de aprendizaje y desaprendizaje perpetuo, una filosofía que aplico en cada proyecto que emprendo. Más allá de las habilidades técnicas, me esfuerzo por ofrecer soluciones creativas, eficientes y adaptables a las necesidades específicas de cada cliente. Mi objetivo: crecer personal y profesionalmente cada día, evolucionando constantemente como desarrolladora y aportando valor a cada proyecto en el que participo.",
-      "cv_link":"https://drive.google.com/file/d/1WLwEsZ-HxfsULa-ulTUeLAwWk9sYMwou/view"
+      "achievements": {
+        "gh_repos": "Repositorios en GitHub",
+        "gh_member": "Miembro de GitHub desde"
+      },
+      "interests": "Intereses",
+      "languages": {
+        "title": "Idiomas",
+        "spanish": {
+          "name": "Español",
+          "level": "Nativo"
+        },
+        "english": {
+          "name": "Inglés",
+          "level": "Fluido"
+        }
+      }
     }
+  },
+  "footer": {
+    "copyright": "Todos los Derechos Reservados."
   }
 }
