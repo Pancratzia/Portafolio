@@ -32,7 +32,7 @@ const Home = () => {
       >
         <RoundedPicture
           imageUrl="./img/personal/profile"
-          description="Laura Ortega - FullStack Web Developer Picture"
+          description={t("alt.profile_picture")}
         />
       </motion.div>
 

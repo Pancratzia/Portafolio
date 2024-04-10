@@ -1,9 +1,11 @@
 import PropTypes from 'prop-types'
+import { useTranslation } from 'react-i18next';
 
 const RoundedPicture = ({ imageUrl, description }) => {
-  {
-    /* image inside a circled picture with animated gradient */
-  }
+  
+
+  const [t] = useTranslation('global');
+
   return (
     <div className="rounded-full bg-[linear-gradient(to_right,theme(colors.purple.800),theme(colors.indigo.500),theme(colors.yellow.600),theme(colors.indigo.500),theme(colors.purple.800))] bg-[length:200%_auto] animate-gradient border-4 border-transparent">
       <picture>
@@ -12,8 +14,8 @@ const RoundedPicture = ({ imageUrl, description }) => {
 
         <img
           src={`${imageUrl}.png`}
-          alt={description}
-          className="rounded-full "
+          alt={t(description)}
+          className="rounded-full"
         />
       </picture>
     </div>

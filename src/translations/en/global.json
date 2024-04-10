@@ -1,6 +1,7 @@
 {
   "meta_title": "Portfolio - Laura Ortega",
   "title": "FullStack Web Developer",
+  "name": "Laura Ortega",
   "buttons": {
     "about_me": "About Me"
   },
@@ -9,5 +10,8 @@
     "twitterX": "Twitter X",
     "github": "Github",
     "linkedin": "Linkedin"
+  },
+  "alt":{
+    "profile_picture":"Profile picture of Laura Ortega"
   }
 }
