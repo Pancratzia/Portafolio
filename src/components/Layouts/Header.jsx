@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 
 const Header = ({ title, pageName }) => {
-  const newRoutes = routes.filter((route) => route.text !== pageName);
+  const newRoutes = routes.filter((route) => route.name !== pageName);
 
   const [t] = useTranslation("global");
 

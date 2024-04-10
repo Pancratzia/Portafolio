@@ -71,26 +71,31 @@ export const routes = [
   {
     Icon: FaHouse,
     text: "sr-only.home",
+    name: "Home",
     link: "/",
   },
   {
     Icon: FaUser,
     text: "sr-only.about",
+    name: "About Me",
     link: "/about",
   },
   {
     Icon: FaCubesStacked,
     text: "sr-only.skills",
+    name: "Skills",
     link: "/skills",
   },
   {
     Icon: FaLaptopCode,
     text: "sr-only.projects",
+    name: "Projects",
     link: "/projects",
   },
   {
     Icon: FaEnvelope,
     text: "sr-only.contact",
+    name: "Contact",
     link: "/contact",
   },
 ];
