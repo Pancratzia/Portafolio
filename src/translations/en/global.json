@@ -1,4 +1,5 @@
 {
+  "htmlLang": "en",
   "meta_title": "Portfolio - Laura Ortega",
   "title": "FullStack Web Developer",
   "name": "Laura Ortega",
@@ -23,7 +24,12 @@
   "pages":{
     "about_me":{
       "title":"About Me",
-      "cv":"Read My CV"
+      "cv":{
+        "question": "¿Do you want to know more about me?",
+        "answer": "Read my CV!"
+      },
+      "info_card": "Driven by an unwavering passion for coding, a love for problem-solving, and an insatiable curiosity to explore, I thrive as a Fullstack developer with an unwavering commitment to excellence. My background in Telematics Engineering has taught me that being a programmer is a journey of perpetual learning and unlearning, a philosophy I apply to every project I undertake. Beyond technical skills, I strive to offer creative, efficient, and adaptable solutions to the specific needs of each client. My goal: to grow personally and professionally every day, constantly evolving as a developer and bringing value to every project I participate in.",
+      "cv_link":"https://drive.google.com/file/d/1WLwEsZ-HxfsULa-ulTUeLAwWk9sYMwou/view"
     }
   }
 }

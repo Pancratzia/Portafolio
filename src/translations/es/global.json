@@ -1,4 +1,5 @@
 {
+  "htmlLang": "es",
   "meta_title": "Portafolio - Laura Ortega",
   "title": "Desarrolladora Web FullStack",
   "name": "Laura Ortega",
@@ -22,7 +23,12 @@
   "pages":{
     "about_me":{
       "title":"Sobre Mi",
-      "cv":"Lee mi CV"
+      "cv":{
+        "question": "¿Quieres saber más sobre mi?",
+        "answer": "¡Lee mi CV!"
+      },
+      "info_card": "Impulsada por una pasión inquebrantable por la programación, un amor por resolver problemas y una curiosidad insaciable por explorar, me dedico al desarrollo Fullstack con un compromiso inquebrantable con la excelencia. Mi formación en Ingeniería Telemática me ha enseñado que ser programadora es un viaje de aprendizaje y desaprendizaje perpetuo, una filosofía que aplico en cada proyecto que emprendo. Más allá de las habilidades técnicas, me esfuerzo por ofrecer soluciones creativas, eficientes y adaptables a las necesidades específicas de cada cliente. Mi objetivo: crecer personal y profesionalmente cada día, evolucionando constantemente como desarrolladora y aportando valor a cada proyecto en el que participo.",
+      "cv_link":"https://drive.google.com/file/d/1WLwEsZ-HxfsULa-ulTUeLAwWk9sYMwou/view"
     }
   }
 }
