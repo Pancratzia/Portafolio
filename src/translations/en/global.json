@@ -1,3 +1,13 @@
 {
-    "changeLanguage": "Cambiar idioma"
+  "meta_title": "Portfolio - Laura Ortega",
+  "title": "FullStack Web Developer",
+  "buttons": {
+    "about_me": "About Me"
+  },
+  "sr-only": {
+    "changeLanguage": "Cambiar Idioma",
+    "twitterX": "Twitter X",
+    "github": "Github",
+    "linkedin": "Linkedin"
+  }
 }

@@ -52,17 +52,17 @@ import {
 export const socials = [
   {
     Icon: FaSquareXTwitter,
-    text: "Twitter X",
+    text: "sr-only.twitterX",
     links: "https://twitter.com/Pancratzia",
   },
   {
     Icon: FaSquareGithub,
-    text: "Github X",
+    text: "sr-only.github",
     links: "https://github.com/Pancratzia",
   },
   {
     Icon: FaLinkedin,
-    text: "Linkedin X",
+    text: "sr-only.linkedin",
     links: "https://www.linkedin.com/in/leortegaperez/",
   },
 ];
