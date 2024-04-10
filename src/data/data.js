@@ -70,27 +70,27 @@ export const socials = [
 export const routes = [
   {
     Icon: FaHouse,
-    text: "Home",
+    text: "sr-only.home",
     link: "/",
   },
   {
     Icon: FaUser,
-    text: "About Me",
+    text: "sr-only.about",
     link: "/about",
   },
   {
     Icon: FaCubesStacked,
-    text: "Skills",
+    text: "sr-only.skills",
     link: "/skills",
   },
   {
     Icon: FaLaptopCode,
-    text: "Projects",
+    text: "sr-only.projects",
     link: "/projects",
   },
   {
     Icon: FaEnvelope,
-    text: "Contact",
+    text: "sr-only.contact",
     link: "/contact",
   },
 ];

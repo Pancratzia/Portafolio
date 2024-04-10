@@ -2,8 +2,11 @@ import { motion } from "framer-motion";
 import RoundedPicture from "../utils/RoundedPicture";
 import InfoCard from "./aboutme/InfoCard";
 import Achievements from "./aboutme/Achievements";
+import { useTranslation } from "react-i18next";
 
 const AboutMe = () => {
+
+  const [t] = useTranslation("global");
 
   return (
     <div className="container grid md:grid-cols-[repeat(1,1fr)] lg:grid-cols-[2fr_3fr] items-center gap-2 lg:gap-10">
@@ -16,7 +19,7 @@ const AboutMe = () => {
       >
         <RoundedPicture
           imageUrl="./img/personal/profile"
-          description="Laura Ortega - FullStack Web Developer Picture"
+          description={t("alt.profile_picture")}
         />
       </motion.div>
 

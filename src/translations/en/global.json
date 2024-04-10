@@ -9,9 +9,21 @@
     "changeLanguage": "Cambiar Idioma",
     "twitterX": "Twitter X",
     "github": "Github",
-    "linkedin": "Linkedin"
+    "linkedin": "Linkedin",
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact",
+    "about": "About",
+    "skills": "Skills"
+
   },
   "alt":{
     "profile_picture":"Profile picture of Laura Ortega"
+  },
+  "pages":{
+    "about_me":{
+      "title":"About Me",
+      "cv":"Read My CV"
+    }
   }
 }

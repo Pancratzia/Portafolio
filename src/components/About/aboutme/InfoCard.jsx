@@ -1,6 +1,10 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 const InfoCard = () => {
+
+  const [t] = useTranslation("global");
+
   return (
     <div className="border-2 border-yellow-600 p-5 rounded-xl text-indigo-100">
       <p className="text-center text-slate-100">
@@ -22,8 +26,7 @@ const InfoCard = () => {
           }
           target="_blank"
         >
-          {" "}
-          Read My CV{" "}
+          {t("pages.about_me.cv")}
         </Link>
       </div>
     </div>

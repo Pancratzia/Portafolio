@@ -17,7 +17,7 @@ const Home = () => {
       exit={{ opacity: 0, scale: 0.5 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="absolute w-0 h-0">
+      <div className="fixed left-0 top-1/2 transform -translate-y-1/2 z-50">
         <ChangeLangBTN />
       </div>
       {/* main title */}
