@@ -6,14 +6,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "./../components/Projects/swiperOverride.css";
 import { Autoplay } from "swiper/modules";
+import { useTranslation } from "react-i18next";
 
 const ProjectsPage = () => {
+  const [t] = useTranslation("global");
   return (
-    <MainLayout title={"< My Projects />"} pageName={"Projects"}>
+    <MainLayout
+      title={`< ${t("pages.projects.title")} />`}
+      pageName={"Projects"}
+    >
       <main className="my-5">
         <div className="container">
           <h3 className="font-bold fluid-2xl uppercase text-center mb-5 italic   text-yellow-600">
-            My Projects
+            {t("pages.projects.subtitles.myprojects")}
           </h3>
 
           <YellowCard>
@@ -23,7 +28,7 @@ const ProjectsPage = () => {
           </YellowCard>
 
           <h3 className="font-bold fluid-2xl uppercase text-center my-5 italic  text-yellow-600">
-            Extra Projects
+            {t("pages.projects.subtitles.extraprojects")}
           </h3>
 
           <YellowCard grid={false}>
@@ -37,7 +42,7 @@ const ProjectsPage = () => {
                 disableOnInteraction: false,
               }}
               modules={[Autoplay]}
-              className="text-slate-300 container bg-yell"
+              className="text-slate-300 container"
             >
               {EXTRA_PROJECTS.map((project, index) => (
                 <SwiperSlide key={index}>

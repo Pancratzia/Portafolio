@@ -20,20 +20,20 @@
     "contact": "Contact",
     "about": "About",
     "skills": "Skills",
-    "interests":{
-      "music":"Music",
-      "reading":"Reading",
-      "dogs":"Dogs",
-      "games":"Games"
+    "interests": {
+      "music": "Music",
+      "reading": "Reading",
+      "dogs": "Dogs",
+      "games": "Games"
     }
   },
-  "alt":{
-    "profile_picture":"Profile picture of Laura Ortega"
+  "alt": {
+    "profile_picture": "Profile picture of Laura Ortega"
   },
-  "pages":{
-    "about_me":{
-      "title":"About Me",
-      "cv":{
+  "pages": {
+    "about_me": {
+      "title": "About Me",
+      "cv": {
         "question": "¿Do you want to know more about me?",
         "answer": "Read my CV!",
         "link": "https://drive.google.com/file/d/1WLwEsZ-HxfsULa-ulTUeLAwWk9sYMwou/view"
@@ -56,15 +56,72 @@
         }
       }
     },
-    "skills":{
-      "title":"Skills",
-      "titles":{
-        "backend":"Backend",
-        "frontend":"Frontend",
-        "languages":"Languages",
-        "devops":"DevOps",
-        "tools":"Tools",
-        "databases":"Databases"
+    "skills": {
+      "title": "Skills",
+      "titles": {
+        "backend": "Backend",
+        "frontend": "Frontend",
+        "languages": "Languages",
+        "devops": "DevOps",
+        "tools": "Tools",
+        "databases": "Databases"
+      }
+    },
+    "projects": {
+      "title": "Projects",
+      "subtitles": {
+        "myprojects": "My Projects",
+        "extraprojects": "Extra Projects"
+      },
+      "projects": {
+        "project_bienes_raices": {
+          "title": "Bienes Raices",
+          "description": "Website for a real estate agency where a listing of properties for sale is displayed, along with details for each of them. It includes an Administration Panel to manage information related to properties, sellers, and blog posts"
+        },
+        "project_landing_page": {
+          "title": "Landing Page - Dra. Yuleima Pérez",
+          "description": "Landing Page for a ginecobstetrician. It's main purpose is to showcase the doctor social media accounts, her services and her contact number. The project is hosted on Vercel and it's correctly indexed in Google Search."
+        },
+        "project_personal_portfolio": {
+          "title": "Personal Portfolio",
+          "description": "My personal portfolio is built with React, TypeScript, and SASS. It utilizes Vite for fast development, AOS library for animations and SwiperJS to create sliders. The project is hosted on Netlify, and its code is available on GitHub. The project integrates FetchAPI and GitHub API to showcase achievements. It also includes multilingual support."
+        },
+        "project_app_salon": {
+          "title": "App Salon",
+          "description": "Website for a beauty salon where a list of services is displayed for clients along with the option to schedule an appointment. It includes an administration section to manage customer information, appointments, and services."
+        },
+        "project_up_task": {
+          "title": "UpTask",
+          "description": "A simple task application where each user can register and create projects, consisting of tasks that can be deleted, modified, and marked as completed."
+        },
+        "project_pankracamp": {
+          "title": "PankraCamp",
+          "description": "Project for a two-day event featuring conferences and workshops. It includes an administrative area to manage event information and a user registration system for attendees. Attendees can purchase three types of tickets and make payments through PayPal (The project is a demo, so it is using a PayPal sandbox account)."
+        },
+        "project_react_nodejs_blog": {
+          "title": "React and NodeJS Blog",
+          "description": "A React Blog created with NodeJS, React, and PostgreSQL. This project enables users to write, modify, and delete blog articles with different categories. Libraries such as React Router Dom, React Quill, and Multer are utilized."
+        },
+        "project_femisys": {
+          "title": "Femisys",
+          "description": "Created for ArLa Corp Organization along with Arthuro Dugarte (ArtDugarte on GitHub). Developed with HTML, Bootstrap, SpringBoot, Electron, and PostgreSQL. This system was designed for a doctor who needed a more efficient solution than the existing system."
+        },
+        "project_ppp": {
+          "title": "P.P.P",
+          "description": "Created for ArLa Corp Organization along with Arthuro Dugarte. This project helps the company 'Pérez Productos Clean' manage inventory, prices, and fabrication ingredients. Developed with Java 8, JasperReports, and MySQL."
+        },
+        "project_conecta4": {
+          "title": "Connect 4",
+          "description": "A connect 4 game developed in React. It allows you to play against another player and uses local storage to save moves and scores."
+        },
+        "project_starwars_wiki": {
+          "title": "Star Wars Wiki",
+          "description": "An StarWars wiki website created with React using Custom Hooks, React Context and StarWars API. The project also includes a filter to search for characters by name, and opens a Modal when a character is clicked, showcasing more information about them."
+        },
+        "project_quiz_app": {
+          "title": "Quiz App",
+          "description": "A web application that lets you play a quiz of 10 questions about programming created with React, Redux and Firebase. It allows you to play as many times as you want and shows a ranking with the best 10 players."
+        }
       }
     }
   },
