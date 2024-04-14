@@ -132,7 +132,7 @@ export const languages = [
 
 export const techStak = [
   {
-    name: "FrontEnd",
+    name: "pages.skills.titles.frontend",
     stack: [
       {
         name: "HTML",
@@ -169,7 +169,7 @@ export const techStak = [
     ],
   },
   {
-    name: "BackEnd",
+    name: "pages.skills.titles.backend",
     stack: [
       {
         name: "Node",
@@ -194,7 +194,7 @@ export const techStak = [
     ],
   },
   {
-    name: "Languages",
+    name: "pages.skills.titles.languages",
     stack: [
       {
         name: "Java",
@@ -215,7 +215,7 @@ export const techStak = [
     ],
   },
   {
-    name: "DevOps",
+    name: "pages.skills.titles.devops",
     stack: [
       {
         name: "Git",
@@ -252,7 +252,7 @@ export const techStak = [
     ],
   },
   {
-    name: "Tools",
+    name: "pages.skills.titles.tools",
     stack: [
       {
         name: "VS Code",
@@ -273,7 +273,7 @@ export const techStak = [
     ],
   },
   {
-    name: "Database",
+    name: "pages.skills.titles.databases",
     stack: [
       {
         name: "MySQL",

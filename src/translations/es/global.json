@@ -55,6 +55,17 @@
           "level": "Fluido"
         }
       }
+    },
+    "skills":{
+      "title":"Habilidades",
+      "titles":{
+        "backend":"Backend",
+        "frontend":"Frontend",
+        "languages":"Lenguajes",
+        "devops":"DevOps",
+        "tools":"Herramientas",
+        "databases":"Bases de Datos"
+      }
     }
   },
   "footer": {

@@ -55,6 +55,17 @@
           "level": "Fluent"
         }
       }
+    },
+    "skills":{
+      "title":"Skills",
+      "titles":{
+        "backend":"Backend",
+        "frontend":"Frontend",
+        "languages":"Languages",
+        "devops":"DevOps",
+        "tools":"Tools",
+        "databases":"Databases"
+      }
     }
   },
   "footer": {
