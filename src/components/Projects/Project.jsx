@@ -35,7 +35,7 @@ const Project = ({ project, isPrincipal = true }) => {
                 className="flex justify-center items-center flex-col gap-1"
               >
                 <FaGithub className="w-5 h-5 md:w-8 md:h-8 text-slate-300" />
-                <span className="sr-only lg:not-sr-only fluid-sm">Github</span>
+                <span className="sr-only lg:not-sr-only fluid-sm">{t("sr-only.github")}</span>
               </Link>
 
               <Link
@@ -45,7 +45,7 @@ const Project = ({ project, isPrincipal = true }) => {
                 className="flex justify-center items-center flex-col gap-1"
               >
                 <FaEye className="w-5 h-5 md:w-8 md:h-8 text-slate-300" />
-                <span className="sr-only lg:not-sr-only fluid-sm">Demo</span>
+                <span className="sr-only lg:not-sr-only fluid-sm">{t("sr-only.demo")}</span>
               </Link>
             </div>
           )}
