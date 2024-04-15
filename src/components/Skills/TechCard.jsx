@@ -6,7 +6,7 @@ const TechCard = ({ name, stack}) => {
     <div className="border-2 border-yellow-600 p-5 rounded-xl">
       <h3 className="font-bold fluid-lg uppercase text-center mb-5">{name}</h3>
 
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
         {stack.map(({ name, Icon }, index) => (
           <Skill key={index} name={name} Icon={Icon} />
         ))}

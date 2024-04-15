@@ -5,7 +5,6 @@ import Achievements from "./aboutme/Achievements";
 import { useTranslation } from "react-i18next";
 
 const AboutMe = () => {
-
   const [t] = useTranslation("global");
 
   return (
@@ -26,7 +25,6 @@ const AboutMe = () => {
       <section>
         <InfoCard />
         <Achievements />
-        
       </section>
     </div>
   );

@@ -9,6 +9,8 @@ const Header = ({ title, pageName }) => {
 
   const [t] = useTranslation("global");
 
+  console.log(title)
+
   return (
     <>
       <nav className="container text-center text-indigo-100 mb-6 py-2 md:py-0">
@@ -29,8 +31,8 @@ const Header = ({ title, pageName }) => {
         </ul>
       </nav>
 
-      <header className="container flex items-center justify-center flex-col text-white ">
-        <h1 className="fluid-4xl py-1 md:py-5 font-extrabold">
+      <header className="container flex items-center justify-center flex-col text-white text-center">
+        <h1 className={`${title === "< Habilidades />" ? "fluid-3xl md:fluid-4xl" : "fluid-4xl" } py-1 md:py-5 font-extrabold`}>
           <AnimatedText text={title} />
         </h1>
       </header>
