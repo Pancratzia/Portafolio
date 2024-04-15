@@ -124,6 +124,9 @@
           "description": "A web application that lets you play a quiz of 10 questions about programming created with React, Redux and Firebase. It allows you to play as many times as you want and shows a ranking with the best 10 players."
         }
       }
+    },
+    "contact":{
+      "title": "Contact Me"
     }
   },
   "footer": {

@@ -11,7 +11,7 @@ const Home = () => {
   const [t] = useTranslation("global");
   return (
     <motion.div
-      className="flex justify-center flex-col min-h-screen py-2 md:py-6 relative"
+      className="flex justify-center flex-col py-2 md:py-6 relative"
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.5 }}

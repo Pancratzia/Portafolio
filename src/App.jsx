@@ -8,7 +8,7 @@ function App() {
 
   return (
     <HelmetProvider>
-    <div className="min-h-screen bg-slate-950 font-display max-w-screen">
+    <div className="h-[100vh] bg-slate-950 font-display max-w-full grid place-items-center">
       <BrowserRouter>
         <Helmet htmlAttributes={{ lang: t("htmlLang") }}>
           <title>{t("meta_title")}</title>
