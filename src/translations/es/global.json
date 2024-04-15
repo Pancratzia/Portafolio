@@ -126,7 +126,35 @@
       }
     },
     "contact":{
-      "title": "Contáctame"
+      "title": "Contáctame",
+      "message": "¿Deseas Contactarme? Por favor, enviame un mensaje y te contestaré lo antes posible.",
+      "legends":{
+        "basic_info": "Información Básica",
+        "contact_info": "Información de Contacto",
+        "message": "Mensaje"
+      },
+      "labels":{
+        "name": "Nombre",
+        "email": "Email",
+        "github":{
+          "label": "Usuario de GitHub",
+          "optional": "Opcional",
+          "alt": "Imagen de perfil de GitHub"
+        },
+        "subject": "Asunto",
+        "message": "Mensaje"
+      },
+      "placeholders":{
+        "name": "Escribe tu nombre...",
+        "email": "Escribe tu correo...",
+        "github": "Escribe tu usuario de GitHub...",
+        "subject": "Escribe un asunto...",
+        "message": "Escribe tu mensaje..."
+      },
+      "buttons": {
+        "send": "Enviar Mensaje",
+        "reset": "Limpiar"
+      }
     }
   },
   "footer": {

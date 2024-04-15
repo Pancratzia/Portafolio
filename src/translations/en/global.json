@@ -126,7 +126,35 @@
       }
     },
     "contact":{
-      "title": "Contact Me"
+      "title": "Contact Me",
+      "message": "Would you like to contact me? Please, send me a message and I'll get back to you as soon as possible.",
+      "legends":{
+        "basic_info": "Basic Information",
+        "contact_info": "Contact Information",
+        "message": "Mensagge"
+      },
+      "placeholders":{
+        "name": "Your name...",
+        "email": "Your email...",
+        "github": "Your github username...",
+        "subject": "Subject...",
+        "message": "Your message..."
+      },
+      "labels":{
+        "name": "Name",
+        "email": "Email",
+        "github":{
+          "label": "Github Username",
+          "optional": "Optional",
+          "alt": "GitHub User Profile Picture"
+        },
+        "subject": "Subject",
+        "message": "Message"
+      },
+      "buttons": {
+        "send": "Send Message",
+        "reset": "Reset"
+      }
     }
   },
   "footer": {
