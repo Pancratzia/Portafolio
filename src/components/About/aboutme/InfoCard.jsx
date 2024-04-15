@@ -10,11 +10,11 @@ const InfoCard = () => {
         {t("pages.about_me.info_card")}
       </p>
 
-      <div className="flex justify-center mt-5 py-2 gap-2 flex-wrap flex-col items-center">
+      <div className="flex justify-center mt-5 py-2 gap-2 flex-wrap flex-col items-center text-center">
 
         <span className="font-bold text-yellow-500">{t("pages.about_me.cv.question")}</span>
         <Link
-          className="font-bold uppercase text-slate-100 hover:text-purple-200 "
+          className="font-bold uppercase text-slate-100 hover:text-purple-200"
           to={t("pages.about_me.cv.link")}
           target="_blank"
         >

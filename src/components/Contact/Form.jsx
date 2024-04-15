@@ -10,10 +10,10 @@ const Form = () => {
     errors,
     setMail,
     mail,
-    handleResetForm
+    handleResetForm,
   } = useForm();
 
-  const {name, email, message, subject} = mail;
+  const { name, email, message, subject } = mail;
 
   const [t] = useTranslation("global");
 
@@ -87,11 +87,18 @@ const Form = () => {
             htmlFor="github"
             className="text-slate-100 font-bold fluid-md my-2"
           >
-            {t("pages.contact.labels.github.label")} <small className="text-slate-300">({t("pages.contact.labels.github.optional")})</small>
+            {t("pages.contact.labels.github.label")}{" "}
+            <small className="text-slate-300">
+              ({t("pages.contact.labels.github.optional")})
+            </small>
           </label>
 
           <div className="flex items-center gap-3 w-100">
-            <img src={githubUserPicture} className="w-12 h-12 rounded-full" alt={t("pages.contact.labels.github.alt")} />
+            <img
+              src={githubUserPicture}
+              className="w-12 h-12 rounded-full"
+              alt={t("pages.contact.labels.github.alt")}
+            />
             <input
               type="text"
               name="github"
@@ -115,7 +122,6 @@ const Form = () => {
         </legend>
 
         <div className="form-field flex flex-col mb-2">
-
           <label
             htmlFor="subject"
             className="text-slate-100 font-bold fluid-md mb-2"
@@ -151,8 +157,7 @@ const Form = () => {
             autoComplete="off"
             className="border-2 border-yellow-600 text-slate-950 rounded-md p-1 font-display"
             rows="5"
-            cols="30"
-            style={{ resize: "vertical", formSizing: "content" }}
+            style={{ resize: "vertical" }}
             onChange={(e) => setMail({ ...mail, message: e.target.value })}
             value={message}
           ></textarea>
