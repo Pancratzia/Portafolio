@@ -9,8 +9,6 @@ const Header = ({ title, pageName }) => {
 
   const [t] = useTranslation("global");
 
-  console.log(title)
-
   return (
     <>
       <nav className="container text-center text-indigo-100 mb-6 py-2 md:py-0">
