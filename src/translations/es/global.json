@@ -159,5 +159,21 @@
   },
   "footer": {
     "copyright": "Todos los Derechos Reservados."
+  },
+  "Swal":{
+    "form":{
+      "success_title": "¡Mensaje Enviado!",
+      "success_text": "Tu mensaje ha sido enviado. Te contactaré lo antes posible.",
+      "error_title": "¡Error!",
+      "error_text": "Algo salió mal. Inténtalo de nuevo más tarde."
+    }
+  },
+  "validations": {
+    "name": "El nombre es requerido y debe tener al menos 3 caracteres",
+    "email_required": "El Email es requerido",
+    "email_not_valid": "El Email no es válido",
+    "github_not_exist": "El usuario de GitHub no existe",
+    "subject": "El asunto es requerido",
+    "message": "El mensaje es requerido"
   }
 }

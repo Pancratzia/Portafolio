@@ -50,7 +50,7 @@ const Form = () => {
             value={name}
           />
           {errors.name && (
-            <p className="text-red-500 text-center mt-1">{errors.name}</p>
+            <p className="text-red-500 text-center mt-1">{t(errors.name)}</p>
           )}
         </div>
       </fieldset>
@@ -78,7 +78,7 @@ const Form = () => {
             value={email}
           />
           {errors.email && (
-            <p className="text-red-500 text-center mt-1">{errors.email}</p>
+            <p className="text-red-500 text-center mt-1">{t(errors.email)}</p>
           )}
         </div>
 
@@ -104,7 +104,7 @@ const Form = () => {
             />
           </div>
           {errors.github && (
-            <p className="text-red-500 text-center mt-1">{errors.github}</p>
+            <p className="text-red-500 text-center mt-1">{t(errors.github)}</p>
           )}
         </div>
       </fieldset>
@@ -133,7 +133,7 @@ const Form = () => {
             value={subject}
           />
           {errors.subject && (
-            <p className="text-red-500 text-center mt-1">{errors.subject}</p>
+            <p className="text-red-500 text-center mt-1">{t(errors.subject)}</p>
           )}
         </div>
 
@@ -158,7 +158,7 @@ const Form = () => {
           ></textarea>
 
           {errors.message && (
-            <p className="text-red-500 text-center mt-1">{errors.message}</p>
+            <p className="text-red-500 text-center mt-1">{t(errors.message)}</p>
           )}
         </div>
       </fieldset>

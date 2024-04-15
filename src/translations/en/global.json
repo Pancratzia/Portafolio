@@ -159,5 +159,21 @@
   },
   "footer": {
     "copyright": "All Rights Reserved."
+  },
+  "Swal":{
+    "form":{
+      "success_title": "Message sent!",
+      "success_text": "Your message has been sent. I'll get back to you as soon as possible.",
+      "error_title": "Error!",
+      "error_text": "Something went wrong. Please try again later."
+    }
+  },
+  "validations": {
+    "name": "Name is required and must be at least 3 characters long",
+    "email_required": "Email is required",
+    "email_not_valid": "Email is not valid",
+    "github_not_exist": "Github user doesn't exist",
+    "subject": "Subject is required",
+    "message": "Message is required"
   }
 }

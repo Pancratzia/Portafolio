@@ -4,6 +4,8 @@ import axios from "axios";
 import emailjs from "@emailjs/browser";
 import { SuccessAlert, ErrorAlert } from "../components/utils/Alerts";
 
+import { useTranslation } from "react-i18next";
+
 const defaultImageURL = "./img/utils/no-user.jpg";
 
 const initialMail = {
@@ -22,6 +24,8 @@ const useForm = () => {
 
   const [mail, setMail] = useState(initialMail);
 
+  const [t] = useTranslation("global");
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const { name, email, message, subject } = mail;
@@ -31,12 +35,12 @@ const useForm = () => {
     if (!name || !name.trim() || name.length < 3) {
       newErrors = {
         ...newErrors,
-        name: "Name is required and must be at least 3 characters long",
+        name: "validations.name",
       };
     }
 
     if (!email || !email.trim() || email === "") {
-      newErrors = { ...newErrors, email: "Email is required" };
+      newErrors = { ...newErrors, email: "validations.email_required" };
     }
 
     if (
@@ -44,7 +48,7 @@ const useForm = () => {
       errors.email !== "" &&
       email !== ""
     ) {
-      newErrors = { ...newErrors, email: "Email is not valid" };
+      newErrors = { ...newErrors, email: "validations.email_not_valid" };
     }
 
     if (
@@ -52,20 +56,21 @@ const useForm = () => {
       githubUserToFind !== "" &&
       githubUserToFind.trim() !== ""
     ) {
-      newErrors = { ...newErrors, github: "Github user doesn't exist" };
+      newErrors = { ...newErrors, github: "validations.github_not_exist" };
     }
 
     if (subject === "" || subject.trim() === "" || !subject) {
-      newErrors = { ...newErrors, subject: "Subject is required" };
+      newErrors = { ...newErrors, subject: "validations.subject" };
     }
 
     if (message === "" || message.trim() === "" || !message) {
-      newErrors = { ...newErrors, message: "Message is required" };
+      newErrors = { ...newErrors, message: "validations.message" };
     }
 
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length > 0) return;
+
 
     emailjs
       .sendForm(
@@ -78,16 +83,16 @@ const useForm = () => {
         async (res) => {
           if (res.status === 200) {
             await SuccessAlert({
-              title: "Message sent!",
-              text: "Thank you for your message. I'll get back to you as soon as possible",
+              title: t("Swal.form.success_title"),
+              text: t("Swal.form.success_text"),
             });
             resetForm(e.target);
           }
         },
         () => {
           ErrorAlert({
-            title: "Error sending message",
-            text: "Please try again later",
+            title: t("Swal.form.error_title"),
+            text: t("Swal.form.error_text"),
           });
         }
       );
