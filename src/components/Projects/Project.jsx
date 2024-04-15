@@ -7,7 +7,7 @@ const Project = ({ project, isPrincipal = true }) => {
   const [t] = useTranslation("global");
   const { title, image, description, github, demo, link } = project;
   return (
-    <div className="mb-5 text-slate-300  border-y-2 p-5">
+    <div className="mb-5 text-slate-300 border-y-2 p-5">
       <h3 className="font-bold fluid-lg uppercase text-center mb-5 text-yellow-500">
         {t(title)}
       </h3>

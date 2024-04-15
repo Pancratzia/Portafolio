@@ -42,7 +42,7 @@ const ProjectsPage = () => {
                 disableOnInteraction: false,
               }}
               modules={[Autoplay]}
-              className="text-slate-300 container"
+              className="text-slate-300 max-w-[300px] sm:max-w-[95%]"
             >
               {EXTRA_PROJECTS.map((project, index) => (
                 <SwiperSlide key={index}>
