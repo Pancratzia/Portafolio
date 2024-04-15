@@ -2,12 +2,18 @@ import { FaEye, FaGithub } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
 const Project = ({ project, isPrincipal = true }) => {
   const [t] = useTranslation("global");
   const { title, image, description, github, demo, link } = project;
   return (
-    <div className="mb-5 text-slate-300 border-y-2 p-5">
+    <motion.div 
+    initial={{ opacity: 0, scale: 0, y: 30 }}
+    whileInView={{ opacity: 1, scale: 1, y: 0 }}
+    transition={{ duration: 1 }}
+    viewport={{ once: true }}
+    className="mb-5 text-slate-300 border-y-2 p-5">
       <h3 className="font-bold fluid-lg uppercase text-center mb-5 text-yellow-500">
         {t(title)}
       </h3>
@@ -16,9 +22,12 @@ const Project = ({ project, isPrincipal = true }) => {
         {isPrincipal && (
           <div className="grid content-center">
             <img
-              src={`./img/projects/${image}.png`}
+              src={`./img/projects/thumbnails/${image}.jpg`}
               alt={title}
               className="rounded-xl"
+              width={"250px"}
+              height={"auto"}
+              loading="lazy"
             />
           </div>
         )}
@@ -58,7 +67,7 @@ const Project = ({ project, isPrincipal = true }) => {
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
