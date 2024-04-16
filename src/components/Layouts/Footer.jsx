@@ -6,7 +6,7 @@ const Footer = () => {
 
   const [t] = useTranslation("global");
   return (
-    <footer className="text-center text-slate-100 md:border-t md:mt-8 border-slate-100">
+    <footer className="text-center text-slate-100 md:border-t md:mt-8 border-slate-100 w-full">
       <div className="grid grid-cols-1 md:grid-cols-2 items-center container">
         <Socials />
         <section>

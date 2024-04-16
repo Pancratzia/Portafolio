@@ -11,13 +11,13 @@ const Home = () => {
   const [t] = useTranslation("global");
   return (
     <motion.div
-      className="flex justify-center flex-col py-2 md:py-6 relative container"
+      className="flex justify-center flex-col py-2 md:py-6  container"
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.5 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="fixed left-0 top-1/2 transform -translate-y-1/2 z-50">
+      <div className="fixed left-auto top-0 right-0 z-50 ">
         <ChangeLangBTN />
       </div>
       {/* main title */}
