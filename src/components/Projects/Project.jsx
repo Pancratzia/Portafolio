@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Project = ({ project, isPrincipal = true }) => {
   const [t] = useTranslation("global");
-  const { title, image, description, github, demo, link } = project;
+  const { title, image, description, github, demo, link, tags } = project;
   return (
     <motion.div 
     initial={{ opacity: 0, scale: 0, y: 30 }}
@@ -66,6 +66,16 @@ const Project = ({ project, isPrincipal = true }) => {
             </Link>
           )}
         </div>
+      </div>
+
+      <div className="w-full my-2 mt-5 text-center">
+
+        {
+          tags.map((tag, index) => (
+            <span key={index} className="inline-block border border-slate-100 rounded-full px-3 py-1 text-xs font-semibold text-slate-100 mr-2 mb-2">{t(tag)}</span>
+
+          ))
+        }
       </div>
     </motion.div>
   );
