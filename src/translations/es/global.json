@@ -85,7 +85,7 @@
       },
       "project_personal_portfolio": {
         "title": "Portafolio Personal",
-        "description": "Mi portafolio personal está hecho con React, TypeScript y SASS. Utiliza Vite para desarrollo rápido, la librería AOS para animaciones y SwiperJS para crear sliders. El proyecto está alojado en Netlify, y su código está disponible en GitHub. El proyecto integra FetchAPI y GitHub API para mostrar logros. Además, incluye soporte multilingúe."
+        "description": "Mi portafolio personal está hecho con React y Tailwind. Utiliza Vite para desarrollo rápido, la librería framer-motion para animaciones y SwiperJS para crear sliders, así como emailJS para enviar correos. El proyecto está alojado en Netlify, y su código está disponible en GitHub. El proyecto integra FetchAPI y GitHub API para mostrar logros. Además, incluye soporte multilingúe."
       },
       "project_app_salon": {
         "title": "App Salon",

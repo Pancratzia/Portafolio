@@ -345,7 +345,7 @@ export const EXTRA_PROJECTS = [
     title: "pages.projects.projects.project_personal_portfolio.title",
     description: "pages.projects.projects.project_personal_portfolio.description",
     link: "https://github.com/Pancratzia/Portfolio",
-    tags: ["HTML", "JavaScript", "GitHub", "React", "TypeScript", "SASS", "AOS", "SwiperJS", "Netlify"],
+    tags: ["HTML", "JavaScript", "GitHub", "React",  "Tailwind","framer-motion", "emailJS", "SwiperJS", "Netlify"],
   },
   {
     title: "pages.projects.projects.project_app_salon.title",

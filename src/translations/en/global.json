@@ -85,7 +85,7 @@
         },
         "project_personal_portfolio": {
           "title": "Personal Portfolio",
-          "description": "My personal portfolio is built with React, TypeScript, and SASS. It utilizes Vite for fast development, AOS library for animations and SwiperJS to create sliders. The project is hosted on Netlify, and its code is available on GitHub. The project integrates FetchAPI and GitHub API to showcase achievements. It also includes multilingual support."
+          "description": "My personal portfolio is built with React and Tailwind. It uses Vite for rapid development, the framer-motion library for animations, and SwiperJS to create sliders, as well as emailJS to send emails. The project is hosted on Netlify, and its code is available on GitHub. The project integrates FetchAPI and GitHub API to display achievements. It also includes multilingual support."
         },
         "project_app_salon": {
           "title": "App Salon",
@@ -125,25 +125,25 @@
         }
       }
     },
-    "contact":{
+    "contact": {
       "title": "Contact Me",
       "message": "Would you like to contact me? Please, send me a message and I'll get back to you as soon as possible.",
-      "legends":{
+      "legends": {
         "basic_info": "Basic Information",
         "contact_info": "Contact Information",
         "message": "Mensagge"
       },
-      "placeholders":{
+      "placeholders": {
         "name": "Your name...",
         "email": "Your email...",
         "github": "Your github username...",
         "subject": "Subject...",
         "message": "Your message..."
       },
-      "labels":{
+      "labels": {
         "name": "Name",
         "email": "Email",
-        "github":{
+        "github": {
           "label": "Github Username",
           "optional": "Optional",
           "alt": "GitHub User Profile Picture"
@@ -160,8 +160,8 @@
   "footer": {
     "copyright": "All Rights Reserved."
   },
-  "Swal":{
-    "form":{
+  "Swal": {
+    "form": {
       "success_title": "Message sent!",
       "success_text": "Your message has been sent. I'll get back to you as soon as possible.",
       "error_title": "Error!",
