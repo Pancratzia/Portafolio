@@ -32,6 +32,10 @@
     "profile_picture":"Imagen de perfil de Laura Ortega"
   },
   "pages":{
+    "error":{
+      "title":"Error 404",
+      "message":"Página no encontrada"
+    },
     "about_me":{
       "title":"Sobre Mi",
       "cv":{

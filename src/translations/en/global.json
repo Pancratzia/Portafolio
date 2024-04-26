@@ -32,6 +32,10 @@
     "profile_picture": "Profile picture of Laura Ortega"
   },
   "pages": {
+    "error":{
+      "title":"Error 404",
+      "message":"Page not found"
+    },
     "about_me": {
       "title": "About Me",
       "cv": {
