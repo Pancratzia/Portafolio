@@ -1,0 +1,12 @@
+{isPrincipal && (
+          <div className="grid content-center">
+            <img
+              src={`./img/projects/thumbnails/${image}.jpg`}
+              alt={title}
+              className="rounded-xl"
+              width={"250px"}
+              height={"auto"}
+              loading="lazy"
+            />
+          </div>
+        )}

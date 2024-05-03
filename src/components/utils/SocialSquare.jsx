@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import PropTypes from 'prop-types'
 import { useTranslation } from "react-i18next";
 
-const SocialSquare = ({ Icon, text, links, color, hoverColor }) => {
+const SocialSquare = ({ Icon, text, links, color = "text-indigo-100", hoverColor="hover:text-purple-200" }) => {
   
   const [t] = useTranslation("global");
 
@@ -26,9 +26,4 @@ SocialSquare.propTypes = {
   links: PropTypes.string.isRequired,
   color: PropTypes.string,
   hoverColor: PropTypes.string
-}
-
-SocialSquare.defaultProps = {
-  color: 'text-indigo-100',
-  hoverColor: 'hover:text-purple-200'
 }
