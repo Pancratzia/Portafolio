@@ -12,6 +12,10 @@ function App() {
       <BrowserRouter>
         <Helmet htmlAttributes={{ lang: t("htmlLang") }}>
           <title>{t("meta_title")}</title>
+          <meta name="description" content={t("meta_description")} />
+          <meta name="keywords" content={t("meta_keywords")} />
+          <meta name="og:title" content={t("meta_title")} />
+          <meta name="og:description" content={t("meta_description")} />
         </Helmet>
         <AppRoutes />
       </BrowserRouter>
