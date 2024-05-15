@@ -49,7 +49,7 @@ import {
   SiPostgresql,
 } from "react-icons/si";
 import { TbBrandAstro } from "react-icons/tb";
-import { SiBun } from "react-icons/si";
+import { SiBun, SiIntellijidea } from "react-icons/si";
 
 export const socials = [
   {
@@ -280,6 +280,10 @@ export const techStak = [
         name: "Eclipse",
         Icon: DiEclipse,
       },
+      {
+        name: "IntelliJ",
+        Icon: SiIntellijidea,
+      }
     ],
   },
   {
