@@ -11,7 +11,7 @@ const Skill = ({ name, Icon, delay }) => {
       viewport={{ once: true }}
       className="flex justify-center items-center flex-col gap-1"
     >
-      <h5 className="sr-only md:not-sr-only fluid-md">{name}</h5>
+      <h5 className="sr-only md:not-sr-only fluid-sm md:fluid-md text-center">{name}</h5>
       <Icon className="w-10 h-10" />
     </motion.div>
   );

@@ -48,6 +48,8 @@ import {
   SiSqlite,
   SiPostgresql,
 } from "react-icons/si";
+import { TbBrandAstro } from "react-icons/tb";
+import { SiBun } from "react-icons/si";
 
 export const socials = [
   {
@@ -166,6 +168,10 @@ export const techStak = [
         name: "VUE",
         Icon: SiVuedotjs,
       },
+      {
+        name: "Astro",
+        Icon: TbBrandAstro,
+      }
     ],
   },
   {
@@ -249,6 +255,10 @@ export const techStak = [
         name: "Vite",
         Icon: SiVite,
       },
+      {
+        name: "Bun",
+        Icon: SiBun,
+      }
     ],
   },
   {

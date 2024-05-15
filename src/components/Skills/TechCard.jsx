@@ -14,7 +14,7 @@ const TechCard = ({ name, stack, delay }) => {
     >
       <h3 className="font-bold fluid-lg uppercase text-center mb-5">{name}</h3>
 
-      <div className="grid grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
+      <div className="grid grid-cols-5 gap-8 sm:gap-10 lg:gap-12">
         {stack.map(({ name, Icon }, index) => (
           <Skill key={index} name={name} Icon={Icon} delay={`.${index + 1}`} />
         ))}
