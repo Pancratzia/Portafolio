@@ -11,7 +11,7 @@ const Header = ({ title, pageName }) => {
 
   return (
     <>
-      <nav className="container text-center text-indigo-100 mb-6 py-2 md:py-0">
+      <nav className="container text-center text-indigo-100 mb-6 py-2 md:py-2 sticky top-0 bg-slate-950 z-50">
         <ul className="flex justify-center items-center gap-10 md:gap-8">
           {newRoutes.map((route, index) => (
             <li key={index}>
